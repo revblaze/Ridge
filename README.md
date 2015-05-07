@@ -1,0 +1,56 @@
+<b>Ridge</b> is an open source project designed to bring the Iroquois Ridge High School experience into the pockets of the students.
+
+## Goals
+What began as an observation — that accessing the services provided by Iroquois Ridge were found as somewhat of a challenge to the students using a mobile device. What if one could gather all the fundamentals and piece them together into a single hub with an awesome layout? Introducing, the Ridge app.
+
+### Fundamental Goals
+- The IR blog, announcements, etc.
+- Club information (feat. signup and contact)
+- Sports information (feat. contact)
+- About the Ridge
+
+### Side Accomplishments
+- Virtual tour of the campus
+- Teacher contact information
+- Section specific to new parents
+- Section specific to aspiring parents
+
+## Completed
+- [ ] Full UI Menu Foundation
+- [ ] IR Blog
+- [ ] IR Announcements
+- [ ] IR Live Tweets
+- [ ] Clubs Section
+- [ ] Sports Section
+- [ ] About IR
+- [ ] Virtual Tour
+- [ ] Teacher Reference
+- [ ] New Parents
+- [ ] Aspiring Parents
+
+## Requirements
+Requires iOS 8.0 or later
+
+## MIT License
+
+Copyright © 2015 Justin Bush. All rights reserved.
+
+```
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
