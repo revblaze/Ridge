@@ -1,3 +1,5 @@
+<img src="Cover.png" width="860" />
+
 <b>Ridge</b> is an open source project designed to bring the Iroquois Ridge High School experience into the pockets of the students.
 
 ## Goals
