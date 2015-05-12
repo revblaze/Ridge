@@ -54,7 +54,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="The Ridge" id="8ze-RV-aSN">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="0nq-vi-Air">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="0nq-vi-Air">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="presentLeftMenuViewController" destination="BYZ-38-t0r" id="wmd-BZ-JVd"/>
@@ -146,5 +146,6 @@
     </scenes>
     <resources>
         <image name="MenuBackground" width="1200" height="1200"/>
+        <image name="MenuIcon" width="75" height="75"/>
     </resources>
 </document>

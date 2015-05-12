@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SSASideMenuDelegate {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.whiteColor()]
         }
         
+        /*
         let sideMenu = SSASideMenu(contentViewController: UINavigationController(rootViewController: ViewController()), leftMenuViewController: LeftMenuViewController(), rightMenuViewController: RightMenuViewController())
         sideMenu.backgroundImage = UIImage(named: "MenuBackground.jpg")
         sideMenu.configure(SSASideMenu.MenuViewEffect(fade: true, scale: true, scaleBackground: false))
@@ -31,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SSASideMenuDelegate {
         
         window?.rootViewController = sideMenu
         window?.makeKeyAndVisible()
-        
+        */
+
         return true
     }
     
