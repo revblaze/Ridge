@@ -4,6 +4,42 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
+        <!--Left Menu View Controller-->
+        <scene sceneID="xeN-K0-7zx">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuViewController" id="hr6-WN-RcF" customClass="LeftMenuViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7UU-Bn-bRd"/>
+                        <viewControllerLayoutGuide type="bottom" id="IlF-0B-dWP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i0l-hM-Li0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRg-0Q-d9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="-470"/>
+        </scene>
+        <!--Right Menu View Controller-->
+        <scene sceneID="iX0-A0-ehl">
+            <objects>
+                <viewController id="uc3-EV-LSD" customClass="RightMenuViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p4H-Zh-BIu"/>
+                        <viewControllerLayoutGuide type="bottom" id="GS5-Dl-UH6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rNY-Q4-Rqt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrx-in-F3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="-470"/>
+        </scene>
         <!--The Ridge-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,16 +53,81 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Ridge" id="8ze-RV-aSN"/>
+                    <navigationItem key="navigationItem" title="The Ridge" id="8ze-RV-aSN">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="0nq-vi-Air">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="presentLeftMenuViewController" destination="BYZ-38-t0r" id="wmd-BZ-JVd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="G3X-bH-gjs" kind="push" id="r7u-OJ-LTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="248"/>
+            <point key="canvasLocation" x="993" y="248"/>
+        </scene>
+        <!--Ann View Controller-->
+        <scene sceneID="Osd-sA-lWw">
+            <objects>
+                <viewController id="G3X-bH-gjs" customClass="AnnViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hVY-NB-UN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="cAG-q3-dkp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yEG-Ag-MYW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fA6-Re-m1f">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="PnA-Mu-lgz">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="presentLeftMenuViewController" destination="G3X-bH-gjs" id="Au8-73-Qxw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7o-cA-vrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="960"/>
+        </scene>
+        <!--Side Menu-->
+        <scene sceneID="pmT-nF-Rkv">
+            <objects>
+                <viewController id="hJA-ee-2fr" customClass="SSASideMenu" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2MO-i5-gBp"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3t-sn-77c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ySI-5R-pe2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="contentViewStoryboardID" value="ViewController"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftMenuViewStoryboardID" value="LeftMenuViewController"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="fadeMenuView" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="scaleMenuView" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="scaleBackgroundImageView" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="parallaxEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="bouncesHorizontally" value="YES"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="MenuBackground"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="rightMenuViewStoryboardID" value="RightMenuViewController"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCD-fG-9kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="248"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PtZ-Hy-RBf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zCu-oE-25s" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController" automaticallyAdjustsScrollViewInsets="NO" id="zCu-oE-25s" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eNW-qb-0hN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,4 +144,7 @@
             <point key="canvasLocation" x="299" y="248"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MenuBackground" width="1200" height="1200"/>
+    </resources>
 </document>
