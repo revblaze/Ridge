@@ -84,15 +84,21 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
         switch indexPath.row {
         case 0:
             
-            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: ViewController())
+            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as? UIViewController
+
             sideMenuViewController?.hideMenuViewController()
             break
         case 1:
             
-            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: AnnViewController())
+            
+            
+            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AnnViewController") as? UIViewController
+
             sideMenuViewController?.hideMenuViewController()
             break
         default:

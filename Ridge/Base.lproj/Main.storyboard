@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zCu-oE-25s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hJA-ee-2fr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -25,7 +25,7 @@
         <!--Right Menu View Controller-->
         <scene sceneID="iX0-A0-ehl">
             <objects>
-                <viewController id="uc3-EV-LSD" customClass="RightMenuViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RightMenuViewController" id="uc3-EV-LSD" customClass="RightMenuViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p4H-Zh-BIu"/>
                         <viewControllerLayoutGuide type="bottom" id="GS5-Dl-UH6"/>
@@ -61,9 +61,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="G3X-bH-gjs" kind="push" id="r7u-OJ-LTg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7o-cA-vrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="960"/>
+            <point key="canvasLocation" x="1805" y="960"/>
         </scene>
         <!--Side Menu-->
         <scene sceneID="pmT-nF-Rkv">
@@ -118,6 +115,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="bouncesHorizontally" value="YES"/>
                         <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="MenuBackground"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="rightMenuViewStoryboardID" value="RightMenuViewController"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="panGestureEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCD-fG-9kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -143,9 +141,28 @@
             </objects>
             <point key="canvasLocation" x="299" y="248"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LZj-0u-Jgw">
+            <objects>
+                <navigationController storyboardIdentifier="AnnViewController" automaticallyAdjustsScrollViewInsets="NO" id="8X7-50-9XU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hjH-Uy-4kk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="G3X-bH-gjs" kind="relationship" relationship="rootViewController" id="7de-iv-q88"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ZS-kX-r8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="960"/>
+        </scene>
     </scenes>
     <resources>
         <image name="MenuBackground" width="1200" height="1200"/>
-        <image name="MenuIcon" width="75" height="75"/>
+        <image name="MenuIcon" width="22" height="16"/>
     </resources>
 </document>
