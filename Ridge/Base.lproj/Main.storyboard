@@ -96,7 +96,6 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="parallaxEnabled" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="bouncesHorizontally" value="YES"/>
                         <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="MenuBackground"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="rightMenuViewStoryboardID" value="RightMenuViewController"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="panGestureEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>

@@ -58,20 +58,15 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
-        
-        let titles: [String] = ["Home", "Announcements", "Profile", "Settings", "Log Out"]
-        
-        let images: [String] = ["IconHome", "IconCalendar", "IconProfile", "IconSettings", "IconEmpty"]
-        
+        let titles: [String] = ["Home", "Announcements", "About", "Ridge Social", "Virtual Tour"]
+        let images: [String] = ["HomeIcon", "AnnIcon", "AboutIcon", "SocialIcon", "TourIcon"]
         cell.backgroundColor = UIColor.clearColor()
         cell.textLabel?.font = UIFont(name: "HelveticaNeue", size: 21)
         cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.text  = titles[indexPath.row]
         cell.selectionStyle = .None
         cell.imageView?.image = UIImage(named: images[indexPath.row])
-        
         
         return cell
     }
@@ -84,15 +79,11 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            
             sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as? UIViewController
 
             sideMenuViewController?.hideMenuViewController()
             break
         case 1:
-            
-            
-            
             sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AnnViewController") as? UIViewController
 
             sideMenuViewController?.hideMenuViewController()
