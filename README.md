@@ -19,13 +19,12 @@ What began as an observation — that accessing the services provided by Iroquoi
 
 ## Completed
 - [ ] Full UI Menu Foundation
-    - [ ] Blog
-    - [ ] Tour
-    - [ ] Clubs
-    - [ ] Sports
-    - [ ] Aspiring Parents
-    - [ ] About
-    - [ ] Contact Information
+    - [x] Home
+    - [x] Announcements
+    - [x] About
+    - [ ] Ridge Contact
+    - [x] Ridge Social
+    - [x] Virtual Tour
 - [ ] IR Blog (Home)
 - [ ] Announcements
 - [ ] IR Live Tweets
