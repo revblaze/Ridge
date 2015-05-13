@@ -17,7 +17,6 @@
 		4D3638051AF26452001E054A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3638041AF26452001E054A /* Images.xcassets */; };
 		4D3638081AF26452001E054A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3638061AF26452001E054A /* LaunchScreen.xib */; };
 		4D3638141AF26452001E054A /* RidgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3638131AF26452001E054A /* RidgeTests.swift */; };
-		4D9787D31B01A8FC00EBD121 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9787D21B01A8FC00EBD121 /* RightMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		4D36380D1AF26452001E054A /* RidgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3638121AF26452001E054A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3638131AF26452001E054A /* RidgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidgeTests.swift; sourceTree = "<group>"; };
-		4D9787D21B01A8FC00EBD121 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 				4D3638011AF26452001E054A /* Main.storyboard */,
 				4D35D2E41B00E6D700A2813C /* AnnViewController.swift */,
 				4D35D2DC1B00E4D200A2813C /* LeftMenuViewController.swift */,
-				4D9787D21B01A8FC00EBD121 /* RightMenuViewController.swift */,
 				4D3638041AF26452001E054A /* Images.xcassets */,
 				4D3638061AF26452001E054A /* LaunchScreen.xib */,
 				4D3637FB1AF26452001E054A /* Supporting Files */,
@@ -231,7 +228,6 @@
 				4D3638001AF26452001E054A /* ViewController.swift in Sources */,
 				4D35D2DB1B00E3B900A2813C /* SSASideMenu.swift in Sources */,
 				4D3637FE1AF26452001E054A /* AppDelegate.swift in Sources */,
-				4D9787D31B01A8FC00EBD121 /* RightMenuViewController.swift in Sources */,
 				4D35D2D91B00E36B00A2813C /* References.md in Sources */,
 				4D35D2DD1B00E4D200A2813C /* LeftMenuViewController.swift in Sources */,
 			);

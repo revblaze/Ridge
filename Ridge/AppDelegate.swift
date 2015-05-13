@@ -13,27 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    // Application did finish launching
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Set UIStatusBar Color
+        // Set UIStatusBar Color (Color)
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         // Set UINavigationBar Title Attributes
         let font = UIFont(name: "HelveticaNeue-Light", size: 22)
         if let font = font {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.whiteColor()]
         }
-        
-        /*
-        let sideMenu = SSASideMenu(contentViewController: UINavigationController(rootViewController: ViewController()), leftMenuViewController: LeftMenuViewController(), rightMenuViewController: RightMenuViewController())
-        sideMenu.backgroundImage = UIImage(named: "MenuBackground.jpg")
-        sideMenu.configure(SSASideMenu.MenuViewEffect(fade: true, scale: true, scaleBackground: false))
-        sideMenu.configure(SSASideMenu.ContentViewEffect(alpha: 1.0, scale: 0.7))
-        sideMenu.configure(SSASideMenu.ContentViewShadow(enabled: true, color: UIColor.blackColor(), opacity: 0.6, radius: 6.0))
-        sideMenu.delegate = self
-        
-        window?.rootViewController = sideMenu
-        window?.makeKeyAndVisible()
-        */
-
         return true
     }
     

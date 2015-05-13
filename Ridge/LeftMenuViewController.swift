@@ -6,11 +6,12 @@
 //  Copyright (c) 2015 Justin Bush. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import Foundation
 
 class LeftMenuViewController: UIViewController {
     
+    // Setup Side Menu TableView
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
@@ -28,23 +29,18 @@ class LeftMenuViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = UIColor.clearColor()
         view.addSubview(tableView)
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
 
 
