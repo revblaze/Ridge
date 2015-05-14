@@ -38,25 +38,9 @@ What began as an observation — that accessing the services provided by Iroquoi
     - [ ] Ridge Coaches
     - [ ] Principals
     - [ ] IRHS1
-- [ ] Clubs Section
-    - [ ] Sections (Leadership, Charities, etc.)
-- [ ] Sports Section
-    - [ ] Sections (Soccer, Football, etc.)
-- [ ] About IR
-- [ ] Virtual Tour
-    - [ ] Possible Video?
-    - [ ] Photo Gallery
 - [ ] Teacher Reference
     - [ ] Teacher List *
     - [ ] Principal List *
-- [ ] New Parents
-    - [ ] Parents who's students are attending next year
-    - [ ] What they can expect on the first day
-    - [ ] Special days (Mentoring Morning, etc.)
-- [ ] Aspiring Parents
-    - [ ] Get parents hyped
-    - [ ] Sell the school
-    - [ ] Extracurriculars, etc.
 
 ## Requirements
 Requires iOS 8.0 or later.
