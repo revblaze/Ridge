@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "TourIcon.png"
+      "filename" : "ContactIcon.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "TourIcon@2x.png"
+      "filename" : "ContactIcon@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "TourIcon@3x.png"
+      "filename" : "ContactIcon@3x.png"
     }
   ],
   "info" : {

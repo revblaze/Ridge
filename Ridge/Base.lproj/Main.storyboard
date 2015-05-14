@@ -74,6 +74,32 @@
             </objects>
             <point key="canvasLocation" x="993" y="960"/>
         </scene>
+        <!--About the Ridge-->
+        <scene sceneID="dm4-ba-CdR">
+            <objects>
+                <viewController id="dlC-tY-t0U" customClass="AboutViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZzT-Q5-tH5"/>
+                        <viewControllerLayoutGuide type="bottom" id="ClX-IK-uUi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WfZ-jP-wOf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About the Ridge" id="RUh-je-jLx">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="6pZ-tn-bBN">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="presentLeftMenuViewController" destination="dlC-tY-t0U" id="ueK-5g-ycI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luu-fI-q9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="1682"/>
+        </scene>
         <!--Side Menu-->
         <scene sceneID="pmT-nF-Rkv">
             <objects>
@@ -140,6 +166,118 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZS-kX-r8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="299" y="960"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RXd-rD-FBU">
+            <objects>
+                <navigationController storyboardIdentifier="AboutViewController" automaticallyAdjustsScrollViewInsets="NO" id="jsL-WN-4f0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d5D-xM-1BW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dlC-tY-t0U" kind="relationship" relationship="rootViewController" id="WAF-ue-Uje"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxs-zX-I0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="1682"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mMm-Gg-rnP">
+            <objects>
+                <navigationController storyboardIdentifier="SocialViewController" automaticallyAdjustsScrollViewInsets="NO" id="rcj-rA-e9M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t2e-gg-N6h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kyA-xF-ASG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="wzY-59-7zy" kind="relationship" relationship="rootViewController" id="J0o-BO-4df"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvp-fJ-C7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="2394"/>
+        </scene>
+        <!--Ridge Social-->
+        <scene sceneID="t7g-kk-beZ">
+            <objects>
+                <viewController id="wzY-59-7zy" customClass="SocialViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qnb-Gf-tu7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZqI-9D-JGJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a04-N1-1OF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ridge Social" id="Q7N-0S-ddd">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="7ZZ-Kl-Dou">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="presentLeftMenuViewController" destination="wzY-59-7zy" id="vqx-ur-rMM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Se7-tU-6wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="2394"/>
+        </scene>
+        <!--Teachers-->
+        <scene sceneID="Orx-G2-TLE">
+            <objects>
+                <viewController id="flb-Ro-W06" customClass="ContactViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HpY-kr-Eku"/>
+                        <viewControllerLayoutGuide type="bottom" id="sEC-nt-RxD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uo9-NX-cYg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Teachers" id="SJf-p2-Qhq">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="l77-Yi-jBI">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="presentLeftMenuViewController" destination="flb-Ro-W06" id="JzL-TV-kQy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLw-af-tbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="3110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LnH-Vk-ihk">
+            <objects>
+                <navigationController storyboardIdentifier="ContactViewController" automaticallyAdjustsScrollViewInsets="NO" id="3gJ-73-xv0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EKG-HI-AUC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="flb-Ro-W06" kind="relationship" relationship="rootViewController" id="StG-jd-r4U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Uw-Ul-jl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="3110"/>
         </scene>
     </scenes>
     <resources>

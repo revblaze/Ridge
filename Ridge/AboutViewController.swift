@@ -1,15 +1,15 @@
 //
-//  AnnViewController.swift
+//  AboutViewController.swift
 //  Ridge
 //
-//  Created by Justin Bush on 2015-05-11.
+//  Created by Justin Bush on 2015-05-14.
 //  Copyright (c) 2015 Justin Bush. All rights reserved.
 //
 
 import UIKit
 
-class AnnViewController: UIViewController {
-
+class AboutViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

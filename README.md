@@ -18,16 +18,23 @@ What began as an observation — that accessing the services provided by Iroquoi
 - Section specific to aspiring parents
 
 ## Completed
-- [ ] Full UI Menu Foundation
+- [x] Full UI Menu Foundation (5 Days)
     - [x] Home
     - [x] Announcements
     - [x] About
-    - [ ] Ridge Contact
+    - [x] Ridge Contact
     - [x] Ridge Social
-    - [x] Virtual Tour
-- [ ] IR Blog (Home)
+- [ ] Home (Ridge Blog)
+    - [ ] RSS Feed
+    - [ ] Import Content
+    - [ ] Display Content
+    - [ ] Image Content Support
 - [ ] Announcements
-- [ ] IR Live Tweets
+    - [ ] Parse HTML
+    - [ ] Display Content
+- [ ] About Ridge
+    - [ ] Content
+- [ ] Ridge Social
     - [ ] Ridge Coaches
     - [ ] Principals
     - [ ] IRHS1

@@ -59,8 +59,8 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
-        let titles: [String] = ["Home", "Announcements", "About", "Ridge Social", "Virtual Tour"]
-        let images: [String] = ["HomeIcon", "AnnIcon", "AboutIcon", "SocialIcon", "TourIcon"]
+        let titles: [String] = ["Home", "Announcements", "About", "Ridge Social", "Teacher Contact"]
+        let images: [String] = ["HomeIcon", "AnnIcon", "AboutIcon", "SocialIcon", "ContactIcon"]
         cell.backgroundColor = UIColor.clearColor()
         cell.textLabel?.font = UIFont(name: "HelveticaNeue", size: 21)
         cell.textLabel?.textColor = UIColor.whiteColor()
@@ -80,12 +80,22 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as? UIViewController
-
             sideMenuViewController?.hideMenuViewController()
             break
         case 1:
             sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AnnViewController") as? UIViewController
-
+            sideMenuViewController?.hideMenuViewController()
+            break
+        case 2:
+            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AboutViewController") as? UIViewController
+            sideMenuViewController?.hideMenuViewController()
+            break
+        case 3:
+            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("SocialViewController") as? UIViewController
+            sideMenuViewController?.hideMenuViewController()
+            break
+        case 4:
+            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("ContactViewController") as? UIViewController
             sideMenuViewController?.hideMenuViewController()
             break
         default:
