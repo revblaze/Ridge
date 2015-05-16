@@ -20,6 +20,7 @@
 		4D936D921B04E5CD00A57488 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D911B04E5CD00A57488 /* AboutViewController.swift */; };
 		4D936D941B04E5F600A57488 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D931B04E5F600A57488 /* SocialViewController.swift */; };
 		4D936D961B04E60400A57488 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D951B04E60400A57488 /* ContactViewController.swift */; };
+		4DEA5C5F1B0771F700C4B485 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA5C5E1B0771F700C4B485 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4D936D911B04E5CD00A57488 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4D936D931B04E5F600A57488 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		4D936D951B04E60400A57488 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		4DEA5C5E1B0771F700C4B485 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEA5C5F1B0771F700C4B485 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 			children = (
 				4D3637FA1AF26452001E054A /* Ridge */,
 				4D3638101AF26452001E054A /* RidgeTests */,
+				4DEA5C5D1B0771C800C4B485 /* Frameworks */,
 				4D3637F91AF26452001E054A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +135,14 @@
 				4D3638121AF26452001E054A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DEA5C5D1B0771C800C4B485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DEA5C5E1B0771F700C4B485 /* Twitter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
