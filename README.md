@@ -7,15 +7,15 @@ What began as an observation — that accessing the services provided by Iroquoi
 
 ### Fundamental Goals
 - The IR blog, announcements, etc.
-- Club information (feat. signup and contact)
-- Sports information (feat. contact)
 - About the Ridge
-
-### Side Accomplishments
-- Virtual tour of the campus
 - Teacher contact information
+
+### Future Ideas
+- Virtual tour of the campus
 - Section specific to new parents
 - Section specific to aspiring parents
+- Club information (feat. signup and contact)
+- Sports information (feat. contact)
 
 ## Completed
 - [x] Full UI Menu Foundation (5 Days)
