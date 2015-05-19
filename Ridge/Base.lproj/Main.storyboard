@@ -85,7 +85,18 @@
                     <view key="view" contentMode="scaleToFill" id="WfZ-jP-wOf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwV-ve-m9J">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EwV-ve-m9J" firstAttribute="leading" secondItem="WfZ-jP-wOf" secondAttribute="leading" id="9jW-Ez-w4P"/>
+                            <constraint firstItem="EwV-ve-m9J" firstAttribute="top" secondItem="WfZ-jP-wOf" secondAttribute="top" id="b2c-ft-Uxu"/>
+                            <constraint firstAttribute="trailing" secondItem="EwV-ve-m9J" secondAttribute="trailing" id="eAk-KA-0l4"/>
+                            <constraint firstItem="ClX-IK-uUi" firstAttribute="top" secondItem="EwV-ve-m9J" secondAttribute="bottom" id="pA2-ec-igR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About the Ridge" id="RUh-je-jLx">
                         <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="6pZ-tn-bBN">
