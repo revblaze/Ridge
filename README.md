@@ -18,27 +18,27 @@ What began as an observation — that accessing the services provided by Iroquoi
 - Sports information (feat. contact)
 
 ## Completed
-- [x] Full UI Menu Foundation (5 Days)
+- [x] Full UI Menu Foundation (5/5 Days)
     - [x] Home
     - [x] Announcements
     - [x] About
     - [x] Ridge Contact
     - [x] Ridge Social
-- [ ] Home (Ridge Blog)
+- [ ] Home (Ridge Blog) (0/10 Days)
     - [ ] RSS Feed
     - [ ] Import Content
     - [ ] Display Content
     - [ ] Image Content Support
-- [ ] Announcements
+- [ ] Announcements (0/5 Days)
     - [ ] Parse HTML
     - [ ] Display Content
-- [ ] About Ridge
+- [ ] About Ridge (0/3 Days)
     - [ ] Content
-- [ ] Ridge Social
+- [ ] Ridge Social (0/5 Days)
     - [ ] Ridge Coaches
     - [ ] Principals
     - [ ] IRHS1
-- [ ] Teacher Reference
+- [ ] Teacher Reference (0/5 Days)
     - [ ] Teacher List *
     - [ ] Principal List *
 
