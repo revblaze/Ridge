@@ -21,7 +21,7 @@ extension UIViewController {
         if let parent = viewController.parentViewController {
             if parent is SSASideMenu {
                 return parent as? SSASideMenu
-            }else {
+            } else {
                 return getSideViewController(parent)
             }
         }
