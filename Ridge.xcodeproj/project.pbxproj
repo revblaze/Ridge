@@ -17,6 +17,16 @@
 		4D3638051AF26452001E054A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3638041AF26452001E054A /* Images.xcassets */; };
 		4D3638081AF26452001E054A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3638061AF26452001E054A /* LaunchScreen.xib */; };
 		4D3638141AF26452001E054A /* RidgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3638131AF26452001E054A /* RidgeTests.swift */; };
+		4D8265E41B0E1CBD00C2382E /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265D01B0E1CBD00C2382E /* DetailTableViewController.m */; };
+		4D8265E51B0E1CBD00C2382E /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265D21B0E1CBD00C2382E /* GTMNSString+HTML.m */; };
+		4D8265E61B0E1CBD00C2382E /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265D41B0E1CBD00C2382E /* MWFeedInfo.m */; };
+		4D8265E71B0E1CBD00C2382E /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265D61B0E1CBD00C2382E /* MWFeedItem.m */; };
+		4D8265E81B0E1CBD00C2382E /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265D81B0E1CBD00C2382E /* MWFeedParser.m */; };
+		4D8265E91B0E1CBD00C2382E /* MWFeedParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265DB1B0E1CBD00C2382E /* MWFeedParserAppDelegate.m */; };
+		4D8265EA1B0E1CBD00C2382E /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265DD1B0E1CBD00C2382E /* NSDate+InternetDateTime.m */; };
+		4D8265EB1B0E1CBD00C2382E /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265DF1B0E1CBD00C2382E /* NSString+HTML.m */; };
+		4D8265EC1B0E1CBD00C2382E /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265E11B0E1CBD00C2382E /* NSString+XMLEntities.m */; };
+		4D8265ED1B0E1CBD00C2382E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265E31B0E1CBD00C2382E /* RootViewController.m */; };
 		4D936D921B04E5CD00A57488 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D911B04E5CD00A57488 /* AboutViewController.swift */; };
 		4D936D941B04E5F600A57488 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D931B04E5F600A57488 /* SocialViewController.swift */; };
 		4D936D961B04E60400A57488 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D951B04E60400A57488 /* ContactViewController.swift */; };
@@ -48,6 +58,27 @@
 		4D36380D1AF26452001E054A /* RidgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3638121AF26452001E054A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3638131AF26452001E054A /* RidgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidgeTests.swift; sourceTree = "<group>"; };
+		4D8265CF1B0E1CBD00C2382E /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		4D8265D01B0E1CBD00C2382E /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		4D8265D11B0E1CBD00C2382E /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		4D8265D21B0E1CBD00C2382E /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		4D8265D31B0E1CBD00C2382E /* MWFeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedInfo.h; sourceTree = "<group>"; };
+		4D8265D41B0E1CBD00C2382E /* MWFeedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedInfo.m; sourceTree = "<group>"; };
+		4D8265D51B0E1CBD00C2382E /* MWFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedItem.h; sourceTree = "<group>"; };
+		4D8265D61B0E1CBD00C2382E /* MWFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedItem.m; sourceTree = "<group>"; };
+		4D8265D71B0E1CBD00C2382E /* MWFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser.h; sourceTree = "<group>"; };
+		4D8265D81B0E1CBD00C2382E /* MWFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedParser.m; sourceTree = "<group>"; };
+		4D8265D91B0E1CBD00C2382E /* MWFeedParser_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser_Private.h; sourceTree = "<group>"; };
+		4D8265DA1B0E1CBD00C2382E /* MWFeedParserAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParserAppDelegate.h; sourceTree = "<group>"; };
+		4D8265DB1B0E1CBD00C2382E /* MWFeedParserAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedParserAppDelegate.m; sourceTree = "<group>"; };
+		4D8265DC1B0E1CBD00C2382E /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		4D8265DD1B0E1CBD00C2382E /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		4D8265DE1B0E1CBD00C2382E /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		4D8265DF1B0E1CBD00C2382E /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		4D8265E01B0E1CBD00C2382E /* NSString+XMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEntities.h"; sourceTree = "<group>"; };
+		4D8265E11B0E1CBD00C2382E /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEntities.m"; sourceTree = "<group>"; };
+		4D8265E21B0E1CBD00C2382E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4D8265E31B0E1CBD00C2382E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4D936D911B04E5CD00A57488 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4D936D931B04E5F600A57488 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		4D936D951B04E60400A57488 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +147,7 @@
 				4D3637FC1AF26452001E054A /* Info.plist */,
 				4D35D2D81B00E36B00A2813C /* References.md */,
 				4D35D2DA1B00E3B900A2813C /* SSASideMenu.swift */,
+				4D8265CE1B0E1CBD00C2382E /* MWFeedParser */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -135,6 +167,34 @@
 				4D3638121AF26452001E054A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D8265CE1B0E1CBD00C2382E /* MWFeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				4D8265CF1B0E1CBD00C2382E /* DetailTableViewController.h */,
+				4D8265D01B0E1CBD00C2382E /* DetailTableViewController.m */,
+				4D8265D11B0E1CBD00C2382E /* GTMNSString+HTML.h */,
+				4D8265D21B0E1CBD00C2382E /* GTMNSString+HTML.m */,
+				4D8265D31B0E1CBD00C2382E /* MWFeedInfo.h */,
+				4D8265D41B0E1CBD00C2382E /* MWFeedInfo.m */,
+				4D8265D51B0E1CBD00C2382E /* MWFeedItem.h */,
+				4D8265D61B0E1CBD00C2382E /* MWFeedItem.m */,
+				4D8265D71B0E1CBD00C2382E /* MWFeedParser.h */,
+				4D8265D81B0E1CBD00C2382E /* MWFeedParser.m */,
+				4D8265D91B0E1CBD00C2382E /* MWFeedParser_Private.h */,
+				4D8265DA1B0E1CBD00C2382E /* MWFeedParserAppDelegate.h */,
+				4D8265DB1B0E1CBD00C2382E /* MWFeedParserAppDelegate.m */,
+				4D8265DC1B0E1CBD00C2382E /* NSDate+InternetDateTime.h */,
+				4D8265DD1B0E1CBD00C2382E /* NSDate+InternetDateTime.m */,
+				4D8265DE1B0E1CBD00C2382E /* NSString+HTML.h */,
+				4D8265DF1B0E1CBD00C2382E /* NSString+HTML.m */,
+				4D8265E01B0E1CBD00C2382E /* NSString+XMLEntities.h */,
+				4D8265E11B0E1CBD00C2382E /* NSString+XMLEntities.m */,
+				4D8265E21B0E1CBD00C2382E /* RootViewController.h */,
+				4D8265E31B0E1CBD00C2382E /* RootViewController.m */,
+			);
+			path = MWFeedParser;
 			sourceTree = "<group>";
 		};
 		4DEA5C5D1B0771C800C4B485 /* Frameworks */ = {
@@ -245,15 +305,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8265E41B0E1CBD00C2382E /* DetailTableViewController.m in Sources */,
+				4D8265ED1B0E1CBD00C2382E /* RootViewController.m in Sources */,
 				4D35D2E51B00E6D700A2813C /* AnnViewController.swift in Sources */,
+				4D8265E81B0E1CBD00C2382E /* MWFeedParser.m in Sources */,
 				4D3638001AF26452001E054A /* ViewController.swift in Sources */,
+				4D8265EA1B0E1CBD00C2382E /* NSDate+InternetDateTime.m in Sources */,
+				4D8265EB1B0E1CBD00C2382E /* NSString+HTML.m in Sources */,
 				4D35D2DB1B00E3B900A2813C /* SSASideMenu.swift in Sources */,
+				4D8265E71B0E1CBD00C2382E /* MWFeedItem.m in Sources */,
+				4D8265E51B0E1CBD00C2382E /* GTMNSString+HTML.m in Sources */,
 				4D936D921B04E5CD00A57488 /* AboutViewController.swift in Sources */,
 				4D3637FE1AF26452001E054A /* AppDelegate.swift in Sources */,
 				4D936D961B04E60400A57488 /* ContactViewController.swift in Sources */,
+				4D8265EC1B0E1CBD00C2382E /* NSString+XMLEntities.m in Sources */,
+				4D8265E91B0E1CBD00C2382E /* MWFeedParserAppDelegate.m in Sources */,
 				4D35D2D91B00E36B00A2813C /* References.md in Sources */,
 				4D35D2DD1B00E4D200A2813C /* LeftMenuViewController.swift in Sources */,
 				4D936D941B04E5F600A57488 /* SocialViewController.swift in Sources */,
+				4D8265E61B0E1CBD00C2382E /* MWFeedInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
