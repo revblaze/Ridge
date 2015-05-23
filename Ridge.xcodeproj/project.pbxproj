@@ -30,6 +30,7 @@
 		4D936D921B04E5CD00A57488 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D911B04E5CD00A57488 /* AboutViewController.swift */; };
 		4D936D941B04E5F600A57488 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D931B04E5F600A57488 /* SocialViewController.swift */; };
 		4D936D961B04E60400A57488 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D951B04E60400A57488 /* ContactViewController.swift */; };
+		4D9E8F441B0FFB0F0067F9A2 /* Ridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E8F421B0FFB0F0067F9A2 /* Ridge.xcdatamodeld */; };
 		4DEA5C5F1B0771F700C4B485 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA5C5E1B0771F700C4B485 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		4D936D911B04E5CD00A57488 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4D936D931B04E5F600A57488 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		4D936D951B04E60400A57488 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		4D9E8F431B0FFB0F0067F9A2 /* Ridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ridge.xcdatamodel; sourceTree = "<group>"; };
 		4DEA5C5E1B0771F700C4B485 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				4D3637FD1AF26452001E054A /* AppDelegate.swift */,
 				4D3637FF1AF26452001E054A /* ViewController.swift */,
 				4D3638011AF26452001E054A /* Main.storyboard */,
+				4D9E8F421B0FFB0F0067F9A2 /* Ridge.xcdatamodeld */,
 				4D35D2E41B00E6D700A2813C /* AnnViewController.swift */,
 				4D936D911B04E5CD00A57488 /* AboutViewController.swift */,
 				4D936D931B04E5F600A57488 /* SocialViewController.swift */,
@@ -314,6 +317,7 @@
 				4D8265EB1B0E1CBD00C2382E /* NSString+HTML.m in Sources */,
 				4D35D2DB1B00E3B900A2813C /* SSASideMenu.swift in Sources */,
 				4D8265E71B0E1CBD00C2382E /* MWFeedItem.m in Sources */,
+				4D9E8F441B0FFB0F0067F9A2 /* Ridge.xcdatamodeld in Sources */,
 				4D8265E51B0E1CBD00C2382E /* GTMNSString+HTML.m in Sources */,
 				4D936D921B04E5CD00A57488 /* AboutViewController.swift in Sources */,
 				4D3637FE1AF26452001E054A /* AppDelegate.swift in Sources */,
@@ -535,6 +539,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D9E8F421B0FFB0F0067F9A2 /* Ridge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D9E8F431B0FFB0F0067F9A2 /* Ridge.xcdatamodel */,
+			);
+			currentVersion = 4D9E8F431B0FFB0F0067F9A2 /* Ridge.xcdatamodel */;
+			path = Ridge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4D3637F01AF26452001E054A /* Project object */;
 }
