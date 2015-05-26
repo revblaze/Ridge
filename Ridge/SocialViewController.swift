@@ -10,10 +10,12 @@ import UIKit
 
 class SocialViewController: UIViewController {
 
+    @IBOutlet var webView: UIWebView!
+    let sourceCode: NSString = "Hello"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        [webView loadHTMLString:sourceCode baseURL:nil]
     }
 
     override func didReceiveMemoryWarning() {
