@@ -24,9 +24,9 @@ What began as an observation — that accessing the services provided by Iroquoi
     - [x] About
     - [x] Ridge Contact
     - [x] Ridge Social
-- [ ] Home (Ridge Blog) (0/10 Days)
-    - [ ] RSS Feed
-    - [ ] Import Content
+- [ ] Home (Ridge Blog) (4/10 Days)
+    - [x] RSS Feed
+    - [x] Import Content
     - [ ] Display Content
     - [ ] Image Content Support
 - [ ] Announcements (0/5 Days)
