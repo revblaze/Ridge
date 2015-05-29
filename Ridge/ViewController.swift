@@ -58,6 +58,23 @@ class ViewController: UIViewController, MWFeedParserDelegate {
         println(item)
         self.items.append(FeedItem(item: item, imageLink: ""))
     }
+    
+    // Under Development: must fix, temporarily disabled via commenting
+    // Prepare for ViewController to DetailViewController Segue
+    /*
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "ShowDetail" {
+            var item = sender as! FeedItem
+            var vc = segue.destinationViewController as! DetailViewController
+            vc.feedItem = item
+        }
+    }
+    */
+    
+    // Refresh RSS Feed and Request
+    @IBAction func refresh(sender: AnyObject) {
+        request()
+    }
 
     // ViewController DidRecieveMemoryWarning
     override func didReceiveMemoryWarning() {
