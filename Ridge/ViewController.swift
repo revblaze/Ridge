@@ -34,12 +34,34 @@ class ViewController: UIViewController, MWFeedParserDelegate {
         feedParser.delegate = self
         feedParser.parse()
     }
+    
+    // MWFeedParser FeedParserDidStart
+    func feedParserDidStart(parser: MWFeedParser) {
+        self.items = [FeedItem]()
+    }
+    
+    // MWFeedParser FeedParserDidFinish
+    func feedParserDidFinish(parser: MWFeedParser) {
+        MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        tbView.reloadData()
+    }
+    
+    // MWFeedParser DidParseFeed
+    func feedParser(parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
+        println(info)
+        self.title = info.title
+    }
+    
+    // MWFeedParser DidParseFeedItem
+    func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
+        println(item)
+        self.items.append(FeedItem(item: item, imageLink: ""))
+    }
 
+    // ViewController DidRecieveMemoryWarning
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-
-
 }
-
