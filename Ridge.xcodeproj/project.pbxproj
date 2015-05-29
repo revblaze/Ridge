@@ -51,6 +51,7 @@
 		4DB6D1A31B18985200511DFF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D1A01B18985200511DFF /* MBProgressHUD.m */; };
 		4DB6D1A61B189A8800511DFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB6D1A51B189A8800511DFF /* QuartzCore.framework */; };
 		4DB6D1A81B189AFD00511DFF /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D1A71B189AFD00511DFF /* FeedItem.swift */; };
+		4DB6D1AF1B18A47B00511DFF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D1AE1B18A47B00511DFF /* DetailViewController.swift */; };
 		4DEA5C5F1B0771F700C4B485 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA5C5E1B0771F700C4B485 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +146,7 @@
 		4DB6D1A51B189A8800511DFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4DB6D1A71B189AFD00511DFF /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		4DB6D1A91B189B8100511DFF /* Ridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		4DB6D1AE1B18A47B00511DFF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4DEA5C5E1B0771F700C4B485 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 			children = (
 				4D3637FD1AF26452001E054A /* AppDelegate.swift */,
 				4D3637FF1AF26452001E054A /* ViewController.swift */,
+				4DB6D1AE1B18A47B00511DFF /* DetailViewController.swift */,
 				4DB6D1A71B189AFD00511DFF /* FeedItem.swift */,
 				4D3638011AF26452001E054A /* Main.storyboard */,
 				4D9E8F421B0FFB0F0067F9A2 /* Ridge.xcdatamodeld */,
@@ -442,6 +445,7 @@
 				4DB6D1961B18983600511DFF /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				4D8265E41B0E1CBD00C2382E /* DetailTableViewController.m in Sources */,
 				4DB6D1981B18983600511DFF /* UIButton+AFNetworking.m in Sources */,
+				4DB6D1AF1B18A47B00511DFF /* DetailViewController.swift in Sources */,
 				4DB6D1A31B18985200511DFF /* MBProgressHUD.m in Sources */,
 				4D8265ED1B0E1CBD00C2382E /* RootViewController.m in Sources */,
 				4D35D2E51B00E6D700A2813C /* AnnViewController.swift in Sources */,
