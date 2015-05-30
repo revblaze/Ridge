@@ -82,6 +82,40 @@ class ViewController: UIViewController, MWFeedParserDelegate {
         return cell
     }
     
+    // Configure TableViewCell for RSS Feed Items
+    func configureCell(cell: MyTableViewCell, atIndexPath indexPath: NSIndexPath) {
+        var feedItem = self.items[indexPath.row] as FeedItem
+        cell.FeedLbl.text = feedItem.item.title
+        cell.FeedLbl.font = UIFont.systemFontOfSize(14.0)
+        cell.FeedLbl.numberOfLines = 0
+        cell.timestamp.text = feedItem.item.date.description
+
+        // Look for image on RSS FeedItem
+        if feedItem.imageLink == "" {
+            var htmlContent = feedItem.item.summary;
+            
+            if let regex = NSRegularExpression(pattern: "(<img.*?src=\")(.*?)(\".*?>)", options: .CaseInsensitive, error: nil) {
+                if (count(htmlContent) > 0) {
+                    if let match = regex.firstMatchInString(htmlContent, options: nil,
+                        range: NSRange(location: 0, length: count(htmlContent))) {
+                            if match.numberOfRanges > 1 {
+                                var imgUrl = (htmlContent as NSString).substringWithRange(match.rangeAtIndex(2))
+                                NSLog("url: %@", imgUrl)
+                            if (imgUrl.lowercaseString.rangeOfString("feedburner") == nil) {
+                                feedItem.imageLink = imgUrl
+                                cell.img.setImageWithURL(NSURL(string: imgUrl), placeholderImage: UIImage(named: "NoImageAvailable"))
+                            }
+                        }
+                    }
+                }
+            }
+        }
+            
+        else {
+            cell.img.setImageWithURL(NSURL(string: feedItem.imageLink), placeholderImage: UIImage(named: "NoImageAvailable"))
+        }
+    }
+    
     // Enable TableView segue from Feed to FeedItem
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let item = self.items[indexPath.row] as FeedItem
