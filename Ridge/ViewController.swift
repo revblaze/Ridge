@@ -59,9 +59,37 @@ class ViewController: UIViewController, MWFeedParserDelegate {
         self.items.append(FeedItem(item: item, imageLink: ""))
     }
     
-    // Under Development: must fix, temporarily disabled via commenting
-    // Prepare for ViewController to DetailViewController Segue
-    /*
+    // Set TableView height
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
+    
+    // Set number of sections in TableView
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    // Set number of rows in section in TableView, return number of RSS items
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.items.count
+    }
+    
+    // Fill TableView with RSS content
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell:MyTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedCell", forIndexPath: indexPath) as! MyTableViewCell
+        
+        self.configureCell(cell, atIndexPath: indexPath)
+        return cell
+    }
+    
+    // Enable TableView segue from Feed to FeedItem
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = self.items[indexPath.row] as FeedItem
+        
+        self.performSegueWithIdentifier("ShowDetail", sender: item)
+    }
+    
+    // Perform segue from Feed to FeedItem
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "ShowDetail" {
             var item = sender as! FeedItem
@@ -69,7 +97,6 @@ class ViewController: UIViewController, MWFeedParserDelegate {
             vc.feedItem = item
         }
     }
-    */
     
     // Refresh RSS Feed and Request
     @IBAction func refresh(sender: AnyObject) {
