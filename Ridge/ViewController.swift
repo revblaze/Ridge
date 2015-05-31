@@ -50,7 +50,7 @@ class ViewController: UIViewController, MWFeedParserDelegate {
     // MWFeedParser DidParseFeed
     func feedParser(parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
         println(info)
-        self.title = info.title
+        // self.title = info.title
     }
     
     // MWFeedParser DidParseFeedItem
@@ -89,6 +89,10 @@ class ViewController: UIViewController, MWFeedParserDelegate {
         cell.FeedLbl.font = UIFont.systemFontOfSize(14.0)
         cell.FeedLbl.numberOfLines = 0
         cell.timestamp.text = feedItem.item.date.description
+        
+        if cell.FeedLbl.text == "" {
+            cell.FeedLbl.text == "Read more"
+        }
 
         // Look for image on RSS FeedItem
         if feedItem.imageLink == "" {
