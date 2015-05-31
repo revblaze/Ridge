@@ -9,6 +9,7 @@
 import UIKit
 
 class FeedItem {
+    
     var item: MWFeedItem!
     var imageLink: String = ""
     

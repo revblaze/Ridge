@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import QuartzCore
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet var titleLbl: UILabel!
+    @IBOutlet var contentWebView: UIWebView!
+    @IBOutlet var imageView: UIImageView!
+    
+    var feedItem: FeedItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

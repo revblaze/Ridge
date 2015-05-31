@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="r7Z-s1-YaJ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeedCell" rowHeight="60" id="r7Z-s1-YaJ" customClass="MyTableViewCell" customModule="Ridge" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7Z-s1-YaJ" id="ZQl-IW-78m">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -63,8 +63,17 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="FeedLbl" destination="yx5-50-L05" id="WuA-6F-QGj"/>
+                                            <outlet property="img" destination="3Zf-Hd-UFB" id="SQ4-eb-UwZ"/>
+                                            <outlet property="timestamp" destination="rlO-Hg-qZm" id="nMD-a2-3BC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8ze-RV-aSN" id="pvC-JS-u9t"/>
+                                    <outlet property="delegate" destination="8ze-RV-aSN" id="Va6-s6-r69"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

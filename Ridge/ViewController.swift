@@ -16,7 +16,7 @@ class ViewController: UIViewController, MWFeedParserDelegate {
     
     // Create an array of FeedItems
     var items = [FeedItem]()
-    @IBOutlet var tbView : UITableView!
+    @IBOutlet var tbView: UITableView!
     
     // ViewController ViewDidLoad
     override func viewDidLoad() {
