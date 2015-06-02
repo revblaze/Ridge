@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="993" y="248"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="b4b-3T-xdB">
             <objects>
-                <viewController id="Vn3-DX-jN0" sceneMemberID="viewController">
+                <viewController id="Vn3-DX-jN0" customClass="DetailViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HeT-1G-eGr"/>
                         <viewControllerLayoutGuide type="bottom" id="wca-do-liM"/>
@@ -123,9 +123,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BsL-Gv-GIu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BsL-Gv-GIu">
                                 <rect key="frame" x="0.0" y="64" width="600" height="144"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="KIz-JC-REL"/>
                                     <constraint firstAttribute="height" constant="100" id="gsz-i0-x08"/>
                                     <constraint firstAttribute="width" constant="100" id="yZc-f8-wXB"/>
                                 </constraints>
@@ -147,16 +148,27 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BsL-Gv-GIu" firstAttribute="leading" secondItem="mGo-N7-XgB" secondAttribute="leading" id="Dw0-ic-DaV"/>
+                            <constraint firstAttribute="trailing" secondItem="BsL-Gv-GIu" secondAttribute="trailing" id="aab-A4-OhX"/>
+                            <constraint firstItem="BsL-Gv-GIu" firstAttribute="top" secondItem="HeT-1G-eGr" secondAttribute="bottom" id="bRt-XE-Ts6"/>
                             <constraint firstItem="Coj-RY-lFb" firstAttribute="top" secondItem="EXV-Ti-BNP" secondAttribute="bottom" constant="33" id="rpp-kg-EiV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="URV-yr-H6N">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="mBm-uN-1pd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="openLink:" destination="Vn3-DX-jN0" id="9MB-Qm-Tnv"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentWebView" destination="Coj-RY-lFb" id="a5M-d8-iMz"/>
+                        <outlet property="imageView" destination="BsL-Gv-GIu" id="tRA-D5-8c8"/>
+                        <outlet property="titleLbl" destination="EXV-Ti-BNP" id="2wx-Fy-6nM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfu-eb-CZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
