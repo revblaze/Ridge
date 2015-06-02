@@ -26,6 +26,13 @@ class DetailViewController: UIViewController {
         contentWebView.loadHTMLString(htmlString, baseURL: nil)
         
         imageView.setImageWithURL(NSURL(string: feedItem.imageLink), placeholderImage: UIImage(named: "Placeholder"))
+        
+        var layer = CALayer()
+        layer.frame = imageView.frame
+        layer.backgroundColor = UIColor.blackColor().CGColor
+        imageView.layer.mask = layer
+        imageView.layer.opacity = 0.8
+        imageView.alpha = 0.5
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +40,9 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func openLink(sender: AnyObject!) {
+        UIApplication.sharedApplication().openURL(NSURL(string: feedItem.item.link)!)
+    }
 
     /*
     // MARK: - Navigation

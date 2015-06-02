@@ -122,7 +122,35 @@
                     <view key="view" contentMode="scaleToFill" id="mGo-N7-XgB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BsL-Gv-GIu">
+                                <rect key="frame" x="0.0" y="64" width="600" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gsz-i0-x08"/>
+                                    <constraint firstAttribute="width" constant="100" id="yZc-f8-wXB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gsz-i0-x08"/>
+                                        <exclude reference="yZc-f8-wXB"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXV-Ti-BNP">
+                                <rect key="frame" x="16" y="105" width="568" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Coj-RY-lFb">
+                                <rect key="frame" x="0.0" y="208" width="600" height="392"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Coj-RY-lFb" firstAttribute="top" secondItem="EXV-Ti-BNP" secondAttribute="bottom" constant="33" id="rpp-kg-EiV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="URV-yr-H6N">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="mBm-uN-1pd">
