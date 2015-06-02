@@ -20,7 +20,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLbl.text = feedItem.item.title
+        
+        var htmlString = feedItem.item.summary
+        contentWebView.loadHTMLString(htmlString, baseURL: nil)
+        
+        imageView.setImageWithURL(NSURL(string: feedItem.imageLink), placeholderImage: UIImage(named: "Placeholder"))
     }
 
     override func didReceiveMemoryWarning() {
