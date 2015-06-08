@@ -10,10 +10,14 @@ import UIKit
 
 class AnnViewController: UIViewController {
 
+    @IBOutlet var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIWebView.loadRequest(webView)(NSURLRequest(URL: NSURL(string: "http://irs.hdsb.ca/announcements/")!))
+        webView.backgroundColor = UIColor.clearColor()
         
-        // Do any additional setup after loading the view.
+        
     }
     
     override func didReceiveMemoryWarning() {

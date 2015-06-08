@@ -149,6 +149,7 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BsL-Gv-GIu" firstAttribute="leading" secondItem="mGo-N7-XgB" secondAttribute="leading" id="Dw0-ic-DaV"/>
                             <constraint firstAttribute="trailing" secondItem="BsL-Gv-GIu" secondAttribute="trailing" id="aab-A4-OhX"/>
@@ -157,6 +158,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="URV-yr-H6N">
+                        <barButtonItem key="backBarButtonItem" title=" " id="BnZ-OU-JpD"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="mBm-uN-1pd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -185,7 +187,20 @@
                     <view key="view" contentMode="scaleToFill" id="yEG-Ag-MYW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wW9-9a-2RV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67730774720094411" green="0.77047631198601352" blue="0.92361111113280414" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wW9-9a-2RV" secondAttribute="trailing" id="1Op-ka-ftD"/>
+                            <constraint firstItem="cAG-q3-dkp" firstAttribute="top" secondItem="wW9-9a-2RV" secondAttribute="bottom" id="8DH-vf-qwD"/>
+                            <constraint firstItem="wW9-9a-2RV" firstAttribute="top" secondItem="yEG-Ag-MYW" secondAttribute="top" id="V5G-aw-swm"/>
+                            <constraint firstItem="wW9-9a-2RV" firstAttribute="leading" secondItem="yEG-Ag-MYW" secondAttribute="leading" id="r99-5j-cIc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Announcements" id="fA6-Re-m1f">
                         <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="PnA-Mu-lgz">
@@ -195,6 +210,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="wW9-9a-2RV" id="PtS-XU-tRq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7o-cA-vrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,7 +278,7 @@
             <objects>
                 <navigationController storyboardIdentifier="ViewController" automaticallyAdjustsScrollViewInsets="NO" id="zCu-oE-25s" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eNW-qb-0hN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="BackButtonIcon" id="eNW-qb-0hN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -414,6 +432,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackButtonIcon" width="20" height="20"/>
         <image name="MenuBackground" width="1200" height="1200"/>
         <image name="MenuIcon" width="22" height="16"/>
     </resources>
