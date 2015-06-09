@@ -16,8 +16,6 @@ class AnnViewController: UIViewController {
         super.viewDidLoad()
         UIWebView.loadRequest(webView)(NSURLRequest(URL: NSURL(string: "http://irs.hdsb.ca/announcements/")!))
         webView.backgroundColor = UIColor.clearColor()
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
