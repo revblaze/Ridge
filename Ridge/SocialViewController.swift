@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Twitter
 
-class SocialViewController: UIViewController {
+class SocialViewController: UITableViewController, TWTRTweetViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
