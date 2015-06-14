@@ -53,6 +53,10 @@
 		4DB6D1A81B189AFD00511DFF /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D1A71B189AFD00511DFF /* FeedItem.swift */; };
 		4DB6D1AF1B18A47B00511DFF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D1AE1B18A47B00511DFF /* DetailViewController.swift */; };
 		4DEA5C5F1B0771F700C4B485 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA5C5E1B0771F700C4B485 /* Twitter.framework */; };
+		4DF1E3F41B2B153800E239F9 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF1E3F01B2B153800E239F9 /* Fabric.framework */; };
+		4DF1E3F51B2B153800E239F9 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF1E3F11B2B153800E239F9 /* TwitterKit.framework */; };
+		4DF1E3F61B2B153800E239F9 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1E3F21B2B153800E239F9 /* TwitterKitResources.bundle */; };
+		4DF1E3F71B2B153800E239F9 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF1E3F31B2B153800E239F9 /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +152,10 @@
 		4DB6D1A91B189B8100511DFF /* Ridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ridge-Bridging-Header.h"; sourceTree = "<group>"; };
 		4DB6D1AE1B18A47B00511DFF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4DEA5C5E1B0771F700C4B485 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		4DF1E3F01B2B153800E239F9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		4DF1E3F11B2B153800E239F9 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		4DF1E3F21B2B153800E239F9 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		4DF1E3F31B2B153800E239F9 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +163,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF1E3F71B2B153800E239F9 /* TwitterCore.framework in Frameworks */,
 				4DEA5C5F1B0771F700C4B485 /* Twitter.framework in Frameworks */,
 				4DB6D1A61B189A8800511DFF /* QuartzCore.framework in Frameworks */,
+				4DF1E3F41B2B153800E239F9 /* Fabric.framework in Frameworks */,
+				4DF1E3F51B2B153800E239F9 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +231,10 @@
 				4D8265CE1B0E1CBD00C2382E /* MWFeedParser */,
 				4DB6D19D1B18985200511DFF /* MBProgressHUD */,
 				4DB6D1831B18983600511DFF /* UIKit+AFNetworking */,
+				4DF1E3F01B2B153800E239F9 /* Fabric.framework */,
+				4DF1E3F11B2B153800E239F9 /* TwitterKit.framework */,
+				4DF1E3F21B2B153800E239F9 /* TwitterKitResources.bundle */,
+				4DF1E3F31B2B153800E239F9 /* TwitterCore.framework */,
 				4DB6D1A91B189B8100511DFF /* Ridge-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
@@ -348,6 +363,7 @@
 				4D3637F41AF26452001E054A /* Sources */,
 				4D3637F51AF26452001E054A /* Frameworks */,
 				4D3637F61AF26452001E054A /* Resources */,
+				4DF1E3EF1B2B14F900E239F9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -419,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF1E3F61B2B153800E239F9 /* TwitterKitResources.bundle in Resources */,
 				4D3638031AF26452001E054A /* Main.storyboard in Resources */,
 				4D3638081AF26452001E054A /* LaunchScreen.xib in Resources */,
 				4D3638051AF26452001E054A /* Images.xcassets in Resources */,
@@ -433,6 +450,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DF1E3EF1B2B14F900E239F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 09e4043f9acec4841af5cfadc2259082d2c8bc65 56fb63c637b6105ee3966bb4bb25f2f70d3665ba3ca7b9f3fd318b8a3cab919b";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D3637F41AF26452001E054A /* Sources */ = {
@@ -608,6 +641,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ridge",
+				);
 				INFOPLIST_FILE = Ridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -621,6 +658,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ridge",
+				);
 				INFOPLIST_FILE = Ridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -24,14 +24,13 @@ What began as an observation — that accessing the services provided by Iroquoi
     - [x] About
     - [x] Ridge Contact
     - [x] Ridge Social
-- [ ] Home (Ridge Blog) (4/10 Days)
+- [x] Home (Ridge Blog) (10/10 Days)
     - [x] RSS Feed
     - [x] Import Content
-    - [ ] Display Content
-    - [ ] Image Content Support
-- [ ] Announcements (0/5 Days)
-    - [ ] Parse HTML
-    - [ ] Display Content
+    - [x] Display Content
+    - [x] Image Content Support
+- [x] Announcements (1/1 Days)
+    - [x] UIWebView
 - [ ] About Ridge (0/3 Days)
     - [ ] Content
 - [ ] Ridge Social (0/5 Days)

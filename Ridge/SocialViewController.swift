@@ -7,12 +7,15 @@
 //
 
 import UIKit
-import Twitter
+import TwitterKit
 
 class SocialViewController: UITableViewController, TWTRTweetViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+
     }
 
     override func didReceiveMemoryWarning() {
