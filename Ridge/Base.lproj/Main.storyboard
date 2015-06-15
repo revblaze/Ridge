@@ -232,30 +232,255 @@
             </objects>
             <point key="canvasLocation" x="993" y="960"/>
         </scene>
-        <!--About the Ridge-->
-        <scene sceneID="dm4-ba-CdR">
+        <!--About-->
+        <scene sceneID="gTo-E0-kno">
             <objects>
-                <viewController id="dlC-tY-t0U" customClass="AboutViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZzT-Q5-tH5"/>
-                        <viewControllerLayoutGuide type="bottom" id="ClX-IK-uUi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WfZ-jP-wOf">
+                <tableViewController id="O9Z-wj-HUD" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="yZb-hQ-1eh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="About the Ridge" id="RUh-je-jLx">
-                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="6pZ-tn-bBN">
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="3VJ-Pg-9W4">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Ryh-Lv-BFb">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ryh-Lv-BFb" id="y5A-jF-vak">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artwork" translatesAutoresizingMaskIntoConstraints="NO" id="R9q-rk-h4F">
+                                                    <rect key="frame" x="8" y="8" width="84" height="83.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="84" id="2zb-Ee-aeA"/>
+                                                        <constraint firstAttribute="height" constant="84" id="df9-9k-tEb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ridge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-GJ-j0j">
+                                                    <rect key="frame" x="100" y="8" width="492" height="25"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qad-Za-nrF">
+                                                    <rect key="frame" x="100" y="35" width="492" height="50.5"/>
+                                                    <animations/>
+                                                    <string key="text">Version 1.0
+Created by Justin Bush
+Copyright Iroquois Ridge © 2015</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="Qad-Za-nrF" firstAttribute="leading" secondItem="R9q-rk-h4F" secondAttribute="trailing" constant="8" id="76f-el-KEY"/>
+                                                <constraint firstItem="R9q-rk-h4F" firstAttribute="top" secondItem="y5A-jF-vak" secondAttribute="topMargin" id="J3w-z8-oPT"/>
+                                                <constraint firstItem="Qad-Za-nrF" firstAttribute="bottom" secondItem="y5A-jF-vak" secondAttribute="bottomMargin" id="RUj-f8-t0m"/>
+                                                <constraint firstItem="Qad-Za-nrF" firstAttribute="top" secondItem="Hkf-GJ-j0j" secondAttribute="bottom" constant="5" id="Szr-UC-ZwE"/>
+                                                <constraint firstItem="R9q-rk-h4F" firstAttribute="leading" secondItem="y5A-jF-vak" secondAttribute="leadingMargin" id="Y7i-dh-x1B"/>
+                                                <constraint firstItem="Hkf-GJ-j0j" firstAttribute="leading" secondItem="R9q-rk-h4F" secondAttribute="trailing" constant="8" id="eCO-TP-Dpi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Credits" footerTitle="These are a list of open source projects used in the application." id="tHm-Lc-K9R">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="qd2-As-wMX">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qd2-As-wMX" id="ynM-Qk-Cgm">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SSASideMenu" translatesAutoresizingMaskIntoConstraints="NO" id="eKY-ze-naJ">
+                                                    <rect key="frame" x="8" y="8" width="84" height="83.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="84" id="E7L-CG-YCy"/>
+                                                        <constraint firstAttribute="height" constant="84" id="Qxo-CB-Kzy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SSASideMenu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGP-b7-729">
+                                                    <rect key="frame" x="100" y="8" width="492" height="25"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2K-22-yuz">
+                                                    <rect key="frame" x="100" y="35" width="492" height="50.5"/>
+                                                    <animations/>
+                                                    <string key="text">License: MIT
+Author: Sebastian Andersen
+Github: SSA111/SSASideMenu</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="t2K-22-yuz" firstAttribute="leading" secondItem="eKY-ze-naJ" secondAttribute="trailing" constant="8" id="0eW-Rm-8fp"/>
+                                                <constraint firstItem="eKY-ze-naJ" firstAttribute="leading" secondItem="ynM-Qk-Cgm" secondAttribute="leadingMargin" id="2gz-WD-o5F"/>
+                                                <constraint firstItem="t2K-22-yuz" firstAttribute="bottom" secondItem="ynM-Qk-Cgm" secondAttribute="bottomMargin" id="Mp2-mc-NFD"/>
+                                                <constraint firstItem="WGP-b7-729" firstAttribute="leading" secondItem="eKY-ze-naJ" secondAttribute="trailing" constant="8" id="SVF-ub-FHU"/>
+                                                <constraint firstItem="eKY-ze-naJ" firstAttribute="top" secondItem="ynM-Qk-Cgm" secondAttribute="topMargin" id="qQf-x1-hCn"/>
+                                                <constraint firstItem="t2K-22-yuz" firstAttribute="top" secondItem="WGP-b7-729" secondAttribute="bottom" constant="5" id="uDK-Yk-pIx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Diu-qL-g7Q">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Diu-qL-g7Q" id="0qk-Fh-j1a">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AFNetworking" translatesAutoresizingMaskIntoConstraints="NO" id="jCB-IW-aCX">
+                                                    <rect key="frame" x="8" y="8" width="84" height="83.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="84" id="4Bt-xb-tSw"/>
+                                                        <constraint firstAttribute="height" constant="84" id="HgZ-g9-qT9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AFNetworking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSI-Jh-r7E">
+                                                    <rect key="frame" x="100" y="8" width="492" height="25"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7O-7G-byA">
+                                                    <rect key="frame" x="100" y="35" width="492" height="50.5"/>
+                                                    <animations/>
+                                                    <string key="text">License: MIT
+Author: Alamofire
+Github: AFNetworking/AFNetworking</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="vSI-Jh-r7E" firstAttribute="leading" secondItem="jCB-IW-aCX" secondAttribute="trailing" constant="8" id="A2l-Zu-azb"/>
+                                                <constraint firstItem="jCB-IW-aCX" firstAttribute="leading" secondItem="0qk-Fh-j1a" secondAttribute="leadingMargin" id="BTA-vf-4ZN"/>
+                                                <constraint firstItem="jCB-IW-aCX" firstAttribute="top" secondItem="0qk-Fh-j1a" secondAttribute="topMargin" id="N66-MG-jq5"/>
+                                                <constraint firstItem="M7O-7G-byA" firstAttribute="top" secondItem="vSI-Jh-r7E" secondAttribute="bottom" constant="5" id="cZC-TO-Wmi"/>
+                                                <constraint firstItem="M7O-7G-byA" firstAttribute="leading" secondItem="jCB-IW-aCX" secondAttribute="trailing" constant="8" id="oLi-rD-Kkp"/>
+                                                <constraint firstItem="M7O-7G-byA" firstAttribute="bottom" secondItem="0qk-Fh-j1a" secondAttribute="bottomMargin" id="ofh-4w-o36"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="tH9-fJ-oc9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tH9-fJ-oc9" id="uwh-Gf-ln5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MBProgressHUD" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-aD-bzw">
+                                                    <rect key="frame" x="8" y="8" width="84" height="83.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="84" id="6Gg-Mo-XrK"/>
+                                                        <constraint firstAttribute="height" constant="84" id="MkT-zt-317"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MBProgressHUD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-EI-bRW">
+                                                    <rect key="frame" x="100" y="8" width="492" height="25"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-Qc-IWl">
+                                                    <rect key="frame" x="100" y="35" width="492" height="50.5"/>
+                                                    <animations/>
+                                                    <string key="text">License: MIT
+Author: Jonathan George
+Github: jdg/MBProgressHUD</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="9hK-aD-bzw" firstAttribute="leading" secondItem="uwh-Gf-ln5" secondAttribute="leadingMargin" id="FRR-ga-CDZ"/>
+                                                <constraint firstItem="9hK-aD-bzw" firstAttribute="top" secondItem="uwh-Gf-ln5" secondAttribute="topMargin" id="TGA-C4-jhv"/>
+                                                <constraint firstItem="nqS-Qc-IWl" firstAttribute="bottom" secondItem="uwh-Gf-ln5" secondAttribute="bottomMargin" id="TXJ-1K-Jbs"/>
+                                                <constraint firstItem="hS8-EI-bRW" firstAttribute="leading" secondItem="9hK-aD-bzw" secondAttribute="trailing" constant="8" id="gNj-AI-a7v"/>
+                                                <constraint firstItem="nqS-Qc-IWl" firstAttribute="leading" secondItem="9hK-aD-bzw" secondAttribute="trailing" constant="8" id="jjk-It-P68"/>
+                                                <constraint firstItem="nqS-Qc-IWl" firstAttribute="top" secondItem="hS8-EI-bRW" secondAttribute="bottom" constant="5" id="zEl-sO-kpa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="XHm-x0-RL0">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XHm-x0-RL0" id="p7Y-Rd-MJa">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitterKit" translatesAutoresizingMaskIntoConstraints="NO" id="qLl-4c-tI9">
+                                                    <rect key="frame" x="8" y="8" width="84" height="83.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="84" id="6ez-kV-eaC"/>
+                                                        <constraint firstAttribute="width" constant="84" id="zRL-lV-YY2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fabric &amp; TwitterKit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCu-u2-0dp">
+                                                    <rect key="frame" x="100" y="8" width="492" height="25"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3o-Qv-gLY">
+                                                    <rect key="frame" x="100" y="35" width="492" height="50.5"/>
+                                                    <animations/>
+                                                    <string key="text">License: Apache (2.0)
+Author: Val Polouchkine
+Github: twitterdev/fabric-timelines-ios</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="qLl-4c-tI9" firstAttribute="leading" secondItem="p7Y-Rd-MJa" secondAttribute="leadingMargin" id="8vp-n0-7yS"/>
+                                                <constraint firstItem="e3o-Qv-gLY" firstAttribute="leading" secondItem="qLl-4c-tI9" secondAttribute="trailing" constant="8" id="GGH-dx-Rne"/>
+                                                <constraint firstItem="qCu-u2-0dp" firstAttribute="leading" secondItem="qLl-4c-tI9" secondAttribute="trailing" constant="8" id="T13-QC-61K"/>
+                                                <constraint firstItem="e3o-Qv-gLY" firstAttribute="top" secondItem="qCu-u2-0dp" secondAttribute="bottom" constant="5" id="Yw7-By-NQw"/>
+                                                <constraint firstItem="e3o-Qv-gLY" firstAttribute="bottom" secondItem="p7Y-Rd-MJa" secondAttribute="bottomMargin" id="d6h-kF-9eV"/>
+                                                <constraint firstItem="qLl-4c-tI9" firstAttribute="top" secondItem="p7Y-Rd-MJa" secondAttribute="topMargin" id="w9o-1q-ike"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="O9Z-wj-HUD" id="5gv-Z7-CbG"/>
+                            <outlet property="delegate" destination="O9Z-wj-HUD" id="kMm-qx-Jvl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About" id="Rf1-DU-qhD">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="TTF-UY-nLd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="presentLeftMenuViewController" destination="dlC-tY-t0U" id="ueK-5g-ycI"/>
+                                <action selector="presentLeftMenuViewController" destination="O9Z-wj-HUD" id="Iyj-Tb-bfF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="luu-fI-q9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="av7-Gc-3sE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="993" y="1682"/>
         </scene>
@@ -342,7 +567,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="dlC-tY-t0U" kind="relationship" relationship="rootViewController" id="WAF-ue-Uje"/>
+                        <segue destination="O9Z-wj-HUD" kind="relationship" relationship="rootViewController" id="e3I-BQ-c4G"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxs-zX-I0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -449,8 +674,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AFNetworking" width="1024" height="1024"/>
+        <image name="Artwork" width="1024" height="1024"/>
         <image name="BackButtonIcon" width="20" height="20"/>
+        <image name="MBProgressHUD" width="1024" height="1024"/>
         <image name="MenuBackground" width="1200" height="1200"/>
         <image name="MenuIcon" width="22" height="16"/>
+        <image name="SSASideMenu" width="1024" height="1024"/>
+        <image name="TwitterKit" width="1024" height="1024"/>
     </resources>
 </document>
