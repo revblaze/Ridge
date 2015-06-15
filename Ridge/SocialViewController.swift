@@ -9,12 +9,10 @@
 import UIKit
 import TwitterKit
 
-class SocialViewController: TWTRTimelineViewController {
+class SocialViewController: UIViewController {
     
+    // ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let client = Twitter.sharedInstance().APIClient
-        self.dataSource = TWTRUserTimelineDataSource(screenName: "fabric", APIClient: client)
     }
 }

@@ -11,27 +11,34 @@ import QuartzCore
 
 class DetailViewController: UIViewController {
 
-    // FeedItem display
+    // FeedItem setup display
     @IBOutlet var titleLbl: UILabel!
     @IBOutlet var contentWebView: UIWebView!
     @IBOutlet var imageView: UIImageView!
     
+    // Setup FeedItem for parsing
     var feedItem: FeedItem!
     
+    // ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Custom UIBackBarButtonItem for Navigation
         let backItem = UIBarButtonItem(image: UIImage(named: "BackButtonIcon"), style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
         backItem.tintColor = UIColor.whiteColor()
         self.navigationItem.leftBarButtonItem = backItem
         
+        // FeedItem title
         titleLbl.text = feedItem.item.title
         
+        // Parse and load HTML from FeedBurner
         var htmlString = feedItem.item.summary
         contentWebView.loadHTMLString(htmlString, baseURL: nil)
         
+        // Placeholder image for articles without media
         imageView.setImageWithURL(NSURL(string: feedItem.imageLink), placeholderImage: UIImage(named: "Placeholder"))
         
+        // Dim article media cover
         var layer = CALayer()
         layer.frame = imageView.frame
         layer.backgroundColor = UIColor.blackColor().CGColor
@@ -39,28 +46,14 @@ class DetailViewController: UIViewController {
         imageView.layer.opacity = 0.8
         imageView.alpha = 0.5
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    // Open feed URL in Safari
     @IBAction func openLink(sender: AnyObject!) {
         UIApplication.sharedApplication().openURL(NSURL(string: feedItem.item.link)!)
     }
 
+    // Add functionality to custom UIBackBarButtonItem
     func back(sender: UIBarButtonItem) {
         self.navigationController?.popViewControllerAnimated(true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

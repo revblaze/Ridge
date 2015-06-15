@@ -22,6 +22,8 @@ class ViewController: UIViewController, MWFeedParserDelegate {
     // ViewController ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Request Feed URL
         request()
     }
     

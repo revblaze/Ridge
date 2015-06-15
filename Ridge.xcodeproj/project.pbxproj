@@ -6,8 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4D5AA66D1B2E975600E2886A /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D5AA6701B2E975700E2886A /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4D1FADBA1B1B63FA007858AC /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FADB91B1B63FA007858AC /* MyTableViewCell.swift */; };
+		4D2482B61B2EFC4C00784341 /* SocialTwitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2482B51B2EFC4C00784341 /* SocialTwitViewController.swift */; };
 		4D35D2D91B00E36B00A2813C /* References.md in Sources */ = {isa = PBXBuildFile; fileRef = 4D35D2D81B00E36B00A2813C /* References.md */; };
 		4D35D2DB1B00E3B900A2813C /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35D2DA1B00E3B900A2813C /* SSASideMenu.swift */; };
 		4D35D2DD1B00E4D200A2813C /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35D2DC1B00E4D200A2813C /* LeftMenuViewController.swift */; };
@@ -71,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		4D1FADB91B1B63FA007858AC /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		4D2482B51B2EFC4C00784341 /* SocialTwitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialTwitViewController.swift; sourceTree = "<group>"; };
 		4D35D2D81B00E36B00A2813C /* References.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = References.md; sourceTree = "<group>"; };
 		4D35D2DA1B00E3B900A2813C /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		4D35D2DC1B00E4D200A2813C /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +227,7 @@
 				4D35D2E41B00E6D700A2813C /* AnnViewController.swift */,
 				4D936D911B04E5CD00A57488 /* AboutViewController.swift */,
 				4D936D931B04E5F600A57488 /* SocialViewController.swift */,
+				4D2482B51B2EFC4C00784341 /* SocialTwitViewController.swift */,
 				4D936D951B04E60400A57488 /* ContactViewController.swift */,
 				4D35D2DC1B00E4D200A2813C /* LeftMenuViewController.swift */,
 				4D3638041AF26452001E054A /* Images.xcassets */,
@@ -364,6 +380,7 @@
 				4D3637F51AF26452001E054A /* Frameworks */,
 				4D3637F61AF26452001E054A /* Resources */,
 				4DF1E3EF1B2B14F900E239F9 /* ShellScript */,
+				4D2482B41B2E9E3B00784341 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -409,6 +426,9 @@
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 4D3637F71AF26452001E054A;
 					};
+					4D5AA66D1B2E975600E2886A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 				};
 			};
 			buildConfigurationList = 4D3637F31AF26452001E054A /* Build configuration list for PBXProject "Ridge" */;
@@ -426,6 +446,7 @@
 			targets = (
 				4D3637F71AF26452001E054A /* Ridge */,
 				4D36380C1AF26452001E054A /* RidgeTests */,
+				4D5AA66D1B2E975600E2886A /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -452,6 +473,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4D2482B41B2E9E3B00784341 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Justin Bush\" \\\n--company-id \"com.revblaze\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n#fi;";
+		};
 		4DF1E3EF1B2B14F900E239F9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,6 +540,7 @@
 				4DB6D17B1B1897E600511DFF /* AFHTTPRequestOperationManager.m in Sources */,
 				4D8265E91B0E1CBD00C2382E /* MWFeedParserAppDelegate.m in Sources */,
 				4DB6D1A81B189AFD00511DFF /* FeedItem.swift in Sources */,
+				4D2482B61B2EFC4C00784341 /* SocialTwitViewController.swift in Sources */,
 				4D35D2D91B00E36B00A2813C /* References.md in Sources */,
 				4D35D2DD1B00E4D200A2813C /* LeftMenuViewController.swift in Sources */,
 				4D936D941B04E5F600A57488 /* SocialViewController.swift in Sources */,
@@ -704,6 +739,20 @@
 			};
 			name = Release;
 		};
+		4D5AA66E1B2E975600E2886A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D5AA66F1B2E975600E2886A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -730,6 +779,15 @@
 			buildConfigurations = (
 				4D36381B1AF26452001E054A /* Debug */,
 				4D36381C1AF26452001E054A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5AA6701B2E975700E2886A /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5AA66E1B2E975600E2886A /* Debug */,
+				4D5AA66F1B2E975600E2886A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

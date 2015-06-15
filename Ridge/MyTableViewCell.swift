@@ -10,6 +10,7 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
+    // Setup UITableView to display FeedItems
     @IBOutlet var img: UIImageView!
     @IBOutlet var FeedLbl: UILabel!
     @IBOutlet var timestamp: UILabel!

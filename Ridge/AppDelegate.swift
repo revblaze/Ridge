@@ -30,6 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    /**
+    <#Description#>
+    
+    :param: sideMenu           <#sideMenu description#>
+    :param: menuViewController <#menuViewController description#>
+    */
+    
     // SideMenuWillShowMenu
     func sideMenuWillShowMenuViewController(sideMenu: SSASideMenu, menuViewController: UIViewController) {
         println("Will Show \(menuViewController)")

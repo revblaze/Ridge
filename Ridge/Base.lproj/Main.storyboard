@@ -522,39 +522,12 @@ Github: twitterdev/fabric-timelines-ios</string>
                         <animations/>
                     </toolbar>
                     <connections>
-                        <segue destination="wzY-59-7zy" kind="relationship" relationship="rootViewController" id="J0o-BO-4df"/>
+                        <segue destination="mra-IQ-3mc" kind="relationship" relationship="rootViewController" id="bW1-ki-Wua"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvp-fJ-C7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="299" y="2394"/>
-        </scene>
-        <!--Ridge Social-->
-        <scene sceneID="t7g-kk-beZ">
-            <objects>
-                <viewController id="wzY-59-7zy" customClass="SocialViewController" customModule="TimelinesSwift" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Qnb-Gf-tu7"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZqI-9D-JGJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="a04-N1-1OF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Ridge Social" id="Q7N-0S-ddd">
-                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="7ZZ-Kl-Dou">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="presentLeftMenuViewController" destination="wzY-59-7zy" id="vqx-ur-rMM"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Se7-tU-6wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="993" y="2394"/>
         </scene>
         <!--Teachers-->
         <scene sceneID="Orx-G2-TLE">
@@ -683,9 +656,9 @@ Github: twitterdev/fabric-timelines-ios</string>
                                 <exclude reference="RYG-5S-eMg"/>
                                 <exclude reference="O9J-3f-IEp"/>
                                 <exclude reference="fvm-CR-kX4"/>
-                                <exclude reference="sta-Gy-DfR"/>
-                                <exclude reference="o5c-sa-NJ4"/>
                                 <exclude reference="CXF-Xq-vmp"/>
+                                <exclude reference="o5c-sa-NJ4"/>
+                                <exclude reference="sta-Gy-DfR"/>
                             </mask>
                         </variation>
                     </view>
@@ -707,6 +680,33 @@ Github: twitterdev/fabric-timelines-ios</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5Y-x7-5Y2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1691" y="248"/>
+        </scene>
+        <!--Ridge Social-->
+        <scene sceneID="tFJ-De-y1t">
+            <objects>
+                <viewController id="mra-IQ-3mc" customClass="SocialTwitViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4gb-0g-fku"/>
+                        <viewControllerLayoutGuide type="bottom" id="MoZ-ju-Xxi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oTc-w5-KLI">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ridge Social" id="gZN-Jh-1kZ">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="pG3-Pb-GVY">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="showLeftMenu:" destination="mra-IQ-3mc" id="mvd-tb-Dxc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ask-ER-fuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="2394"/>
         </scene>
     </scenes>
     <resources>
