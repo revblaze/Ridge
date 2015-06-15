@@ -31,13 +31,13 @@ What began as an observation — that accessing the services provided by Iroquoi
     - [x] Image Content Support
 - [x] Announcements (1/1 Days)
     - [x] UIWebView
-- [x] About Ridge (0/1 Days)
+- [x] About Ridge (1/1 Days)
     - [x] Content
     - [x] Credits
-- [ ] Ridge Social (0/5 Days)
-    - [ ] Ridge Coaches
-    - [ ] Principals
-    - [ ] IRHS1
+- [x] Ridge Social (5/5 Days)
+    - [x] Ridge Coaches
+    - [x] Principals
+    - [x] IRHS1
 - [ ] Teacher Reference (0/5 Days)
     - [ ] Teacher List *
     - [ ] Principal List *
