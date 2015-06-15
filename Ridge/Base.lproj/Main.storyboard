@@ -529,53 +529,6 @@ Github: twitterdev/fabric-timelines-ios</string>
             </objects>
             <point key="canvasLocation" x="299" y="2394"/>
         </scene>
-        <!--Teachers-->
-        <scene sceneID="Orx-G2-TLE">
-            <objects>
-                <viewController id="flb-Ro-W06" customClass="ContactViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HpY-kr-Eku"/>
-                        <viewControllerLayoutGuide type="bottom" id="sEC-nt-RxD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uo9-NX-cYg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Teachers" id="SJf-p2-Qhq">
-                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="l77-Yi-jBI">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="presentLeftMenuViewController" destination="flb-Ro-W06" id="JzL-TV-kQy"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pLw-af-tbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="993" y="3110"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="LnH-Vk-ihk">
-            <objects>
-                <navigationController storyboardIdentifier="ContactViewController" automaticallyAdjustsScrollViewInsets="NO" id="3gJ-73-xv0" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EKG-HI-AUC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="flb-Ro-W06" kind="relationship" relationship="rootViewController" id="StG-jd-r4U"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Uw-Ul-jl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="299" y="3110"/>
-        </scene>
         <!--Detail View Controller-->
         <scene sceneID="xb2-hB-U68">
             <objects>

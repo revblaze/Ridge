@@ -44,7 +44,6 @@
 		4D8265ED1B0E1CBD00C2382E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8265E31B0E1CBD00C2382E /* RootViewController.m */; };
 		4D936D921B04E5CD00A57488 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D911B04E5CD00A57488 /* AboutViewController.swift */; };
 		4D936D941B04E5F600A57488 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D931B04E5F600A57488 /* SocialViewController.swift */; };
-		4D936D961B04E60400A57488 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D936D951B04E60400A57488 /* ContactViewController.swift */; };
 		4DB6D17A1B1897E600511DFF /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D1681B1897E600511DFF /* AFHTTPRequestOperation.m */; };
 		4DB6D17B1B1897E600511DFF /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D16A1B1897E600511DFF /* AFHTTPRequestOperationManager.m */; };
 		4DB6D17C1B1897E600511DFF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6D16C1B1897E600511DFF /* AFHTTPSessionManager.m */; };
@@ -123,7 +122,6 @@
 		4D8265E31B0E1CBD00C2382E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4D936D911B04E5CD00A57488 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4D936D931B04E5F600A57488 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
-		4D936D951B04E60400A57488 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		4DB6D1671B1897E600511DFF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		4DB6D1681B1897E600511DFF /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		4DB6D1691B1897E600511DFF /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 				4D936D911B04E5CD00A57488 /* AboutViewController.swift */,
 				4D936D931B04E5F600A57488 /* SocialViewController.swift */,
 				4D2482B51B2EFC4C00784341 /* SocialTwitViewController.swift */,
-				4D936D951B04E60400A57488 /* ContactViewController.swift */,
 				4D35D2DC1B00E4D200A2813C /* LeftMenuViewController.swift */,
 				4D3638041AF26452001E054A /* Images.xcassets */,
 				4D3638061AF26452001E054A /* LaunchScreen.xib */,
@@ -535,7 +532,6 @@
 				4D936D921B04E5CD00A57488 /* AboutViewController.swift in Sources */,
 				4DB6D17C1B1897E600511DFF /* AFHTTPSessionManager.m in Sources */,
 				4D3637FE1AF26452001E054A /* AppDelegate.swift in Sources */,
-				4D936D961B04E60400A57488 /* ContactViewController.swift in Sources */,
 				4D8265EC1B0E1CBD00C2382E /* NSString+XMLEntities.m in Sources */,
 				4DB6D17B1B1897E600511DFF /* AFHTTPRequestOperationManager.m in Sources */,
 				4D8265E91B0E1CBD00C2382E /* MWFeedParserAppDelegate.m in Sources */,

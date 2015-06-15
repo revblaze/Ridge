@@ -42,6 +42,21 @@ What began as an observation — that accessing the services provided by Iroquoi
     - [ ] Teacher List *
     - [ ] Principal List *
 
+## Testing Data
+There is no opportunity for testing data within the program.
+
+## Known Errors
+- Once you have opened the SocialTwitViewController, there is no way to reopen the SideMenu. This is do to a bug within the push and segue of the SideMenu. Author said he would said a merge request today.
+- Enable to modify the font type and size of the parsed feed items.
+
+## References
+1. SSASideMenu (https://github.com/SSA111/SSASideMenu) [MIT License]
+2. MWFeedParser (https://github.com/mwaterfall/MWFeedParser) [MIT License]
+3. AFNetworking (https://github.com/AFNetworking/AFNetworking) [MIT License]
+4. MBProgressHUD (https://github.com/jdg/MBProgressHUD) [MIT License]
+5. Fabric + TwitterKit (twitterdev/fabric-timelines-ios) [Apache 2.0 License]
+A reference is also available in app.
+
 ## Requirements
 Requires iOS 8.0 or later.
 

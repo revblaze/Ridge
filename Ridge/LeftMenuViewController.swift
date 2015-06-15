@@ -50,7 +50,7 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -59,8 +59,8 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
-        let titles: [String] = ["Home", "Announcements", "About", "Ridge Social", "Teacher Contact"]
-        let images: [String] = ["HomeIcon", "AnnIcon", "AboutIcon", "SocialIcon", "ContactIcon"]
+        let titles: [String] = ["Home", "Announcements", "About", "Ridge Social" /* "Teacher Contact" */]
+        let images: [String] = ["HomeIcon", "AnnIcon", "AboutIcon", "SocialIcon" /* "ContactIcon" */]
         cell.backgroundColor = UIColor.clearColor()
         cell.textLabel?.font = UIFont(name: "HelveticaNeue", size: 21)
         cell.textLabel?.textColor = UIColor.whiteColor()
@@ -94,10 +94,12 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
             sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("SocialViewController") as? UIViewController
             sideMenuViewController?.hideMenuViewController()
             break
+            /*
         case 4:
             sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("ContactViewController") as? UIViewController
             sideMenuViewController?.hideMenuViewController()
             break
+            */
         default:
             break
         }
