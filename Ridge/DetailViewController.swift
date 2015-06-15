@@ -11,6 +11,7 @@ import QuartzCore
 
 class DetailViewController: UIViewController {
 
+    // FeedItem display
     @IBOutlet var titleLbl: UILabel!
     @IBOutlet var contentWebView: UIWebView!
     @IBOutlet var imageView: UIImageView!
@@ -20,6 +21,10 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let backItem = UIBarButtonItem(image: UIImage(named: "BackButtonIcon"), style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
+        backItem.tintColor = UIColor.whiteColor()
+        self.navigationItem.leftBarButtonItem = backItem
+        
         titleLbl.text = feedItem.item.title
         
         var htmlString = feedItem.item.summary
@@ -44,6 +49,10 @@ class DetailViewController: UIViewController {
         UIApplication.sharedApplication().openURL(NSURL(string: feedItem.item.link)!)
     }
 
+    func back(sender: UIBarButtonItem) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     /*
     // MARK: - Navigation
 

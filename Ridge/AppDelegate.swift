@@ -25,25 +25,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.whiteColor()]
         }
         
+        // Introduce the Twitter Framework
         Fabric.with([Twitter()])
         return true
     }
     
+    // SideMenuWillShowMenu
     func sideMenuWillShowMenuViewController(sideMenu: SSASideMenu, menuViewController: UIViewController) {
         println("Will Show \(menuViewController)")
     }
     
+    // SideMenuDidShowMenu
     func sideMenuDidShowMenuViewController(sideMenu: SSASideMenu, menuViewController: UIViewController) {
         println("Did Show \(menuViewController)")
     }
     
+    // SideMenuDidHideMenu
     func sideMenuDidHideMenuViewController(sideMenu: SSASideMenu, menuViewController: UIViewController) {
         println("Did Hide \(menuViewController)")
     }
     
+    // SideMenuWillHideMenu
     func sideMenuWillHideMenuViewController(sideMenu: SSASideMenu, menuViewController: UIViewController) {
         println("Will Hide \(menuViewController)")
     }
+    
+    // SideMenuDidRecognizeGestures
     func sideMenuDidRecognizePanGesture(sideMenu: SSASideMenu, recongnizer: UIPanGestureRecognizer) {
         println("Did Recognize PanGesture \(recongnizer)")
     }
@@ -69,7 +76,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-
