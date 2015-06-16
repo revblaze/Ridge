@@ -356,7 +356,7 @@ Github: jdg/MBProgressHUD</string>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XHm-x0-RL0" id="p7Y-Rd-MJa">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitterKit" translatesAutoresizingMaskIntoConstraints="NO" id="qLl-4c-tI9">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MWFeedParser" translatesAutoresizingMaskIntoConstraints="NO" id="qLl-4c-tI9">
                                                     <rect key="frame" x="8" y="8" width="84" height="83.5"/>
                                                     <animations/>
                                                     <constraints>
@@ -364,7 +364,7 @@ Github: jdg/MBProgressHUD</string>
                                                         <constraint firstAttribute="width" constant="84" id="zRL-lV-YY2"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fabric &amp; TwitterKit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCu-u2-0dp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MWFeedParser" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCu-u2-0dp">
                                                     <rect key="frame" x="100" y="8" width="492" height="25"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
@@ -374,9 +374,9 @@ Github: jdg/MBProgressHUD</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3o-Qv-gLY">
                                                     <rect key="frame" x="100" y="35" width="492" height="50.5"/>
                                                     <animations/>
-                                                    <string key="text">License: Apache (2.0)
-Author: Val Polouchkine
-Github: twitterdev/fabric-timelines-ios</string>
+                                                    <string key="text">License: MIT
+Author: Michael Waterfall
+Github: mwaterfall/MWFeedParser</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -390,6 +390,49 @@ Github: twitterdev/fabric-timelines-ios</string>
                                                 <constraint firstItem="e3o-Qv-gLY" firstAttribute="top" secondItem="qCu-u2-0dp" secondAttribute="bottom" constant="5" id="Yw7-By-NQw"/>
                                                 <constraint firstItem="e3o-Qv-gLY" firstAttribute="bottom" secondItem="p7Y-Rd-MJa" secondAttribute="bottomMargin" id="d6h-kF-9eV"/>
                                                 <constraint firstItem="qLl-4c-tI9" firstAttribute="top" secondItem="p7Y-Rd-MJa" secondAttribute="topMargin" id="w9o-1q-ike"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="dPe-wQ-CpT">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dPe-wQ-CpT" id="YLU-eV-hKP">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitterKit" translatesAutoresizingMaskIntoConstraints="NO" id="EgG-mQ-6Ay">
+                                                    <rect key="frame" x="8" y="8" width="84" height="83.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="84" id="MN4-5I-P29"/>
+                                                        <constraint firstAttribute="width" constant="84" id="kzO-al-FKv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fabric &amp; TwitterKit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-aH-Gow">
+                                                    <rect key="frame" x="100" y="8" width="492" height="25"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crh-g6-htI">
+                                                    <rect key="frame" x="100" y="35" width="492" height="50.5"/>
+                                                    <animations/>
+                                                    <string key="text">License: Apache (2.0)
+Author: Val Polouchkine
+Github: twitterdev/fabric-timelines-ios</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="crh-g6-htI" firstAttribute="top" secondItem="pxd-aH-Gow" secondAttribute="bottom" constant="5" id="Cpa-MA-Rfz"/>
+                                                <constraint firstItem="EgG-mQ-6Ay" firstAttribute="leading" secondItem="YLU-eV-hKP" secondAttribute="leadingMargin" id="Dgv-j3-zfr"/>
+                                                <constraint firstItem="pxd-aH-Gow" firstAttribute="leading" secondItem="EgG-mQ-6Ay" secondAttribute="trailing" constant="8" id="MBs-sC-dyw"/>
+                                                <constraint firstItem="crh-g6-htI" firstAttribute="leading" secondItem="EgG-mQ-6Ay" secondAttribute="trailing" constant="8" id="Msx-3K-PuL"/>
+                                                <constraint firstItem="EgG-mQ-6Ay" firstAttribute="top" secondItem="YLU-eV-hKP" secondAttribute="topMargin" id="YrN-OC-dni"/>
+                                                <constraint firstItem="crh-g6-htI" firstAttribute="bottom" secondItem="YLU-eV-hKP" secondAttribute="bottomMargin" id="bEq-Lo-wF3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -667,6 +710,7 @@ Github: twitterdev/fabric-timelines-ios</string>
         <image name="Artwork" width="1024" height="1024"/>
         <image name="BackButtonIcon" width="20" height="20"/>
         <image name="MBProgressHUD" width="1024" height="1024"/>
+        <image name="MWFeedParser" width="1024" height="1024"/>
         <image name="MenuBackground" width="1200" height="1200"/>
         <image name="MenuIcon" width="22" height="16"/>
         <image name="SSASideMenu" width="1024" height="1024"/>

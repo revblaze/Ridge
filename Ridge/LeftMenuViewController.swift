@@ -36,11 +36,6 @@ class LeftMenuViewController: UIViewController {
         view.backgroundColor = UIColor.clearColor()
         view.addSubview(tableView)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 
 
@@ -59,8 +54,8 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
-        let titles: [String] = ["Home", "Announcements", "About", "Ridge Social" /* "Teacher Contact" */]
-        let images: [String] = ["HomeIcon", "AnnIcon", "AboutIcon", "SocialIcon" /* "ContactIcon" */]
+        let titles: [String] = ["Home", "About", "Announcements", "Ridge Social" /* "Teacher Contact" */]
+        let images: [String] = ["HomeIcon", "AboutIcon", "AnnIcon", "SocialIcon" /* "ContactIcon" */]
         cell.backgroundColor = UIColor.clearColor()
         cell.textLabel?.font = UIFont(name: "HelveticaNeue", size: 21)
         cell.textLabel?.textColor = UIColor.whiteColor()
@@ -83,11 +78,11 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
             sideMenuViewController?.hideMenuViewController()
             break
         case 1:
-            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AnnViewController") as? UIViewController
+            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AboutViewController") as? UIViewController
             sideMenuViewController?.hideMenuViewController()
             break
         case 2:
-            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AboutViewController") as? UIViewController
+            sideMenuViewController?.contentViewController = storyBoard.instantiateViewControllerWithIdentifier("AnnViewController") as? UIViewController
             sideMenuViewController?.hideMenuViewController()
             break
         case 3:
