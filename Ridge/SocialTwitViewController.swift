@@ -32,6 +32,6 @@ class SocialTwitViewController: TWTRTimelineViewController {
     
     // Enable Left Menu Button
     @IBAction func showLeftMenu(sender: AnyObject) {
-        sideMenuViewController?.presentLeftMenuViewController()
+        NSNotificationCenter.defaultCenter().postNotificationName("showLeftMenu", object: nil)
     }
 }

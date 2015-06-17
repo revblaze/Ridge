@@ -565,7 +565,7 @@ Github: twitterdev/fabric-timelines-ios</string>
                         <animations/>
                     </toolbar>
                     <connections>
-                        <segue destination="mra-IQ-3mc" kind="relationship" relationship="rootViewController" id="bW1-ki-Wua"/>
+                        <segue destination="axa-Ic-Nb7" kind="relationship" relationship="rootViewController" id="tk5-DS-feG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvp-fJ-C7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -678,31 +678,76 @@ Github: twitterdev/fabric-timelines-ios</string>
             <point key="canvasLocation" x="1691" y="248"/>
         </scene>
         <!--Ridge Social-->
-        <scene sceneID="tFJ-De-y1t">
+        <scene sceneID="oP4-1R-ZcA">
             <objects>
-                <viewController id="mra-IQ-3mc" customClass="SocialTwitViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="axa-Ic-Nb7" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4gb-0g-fku"/>
-                        <viewControllerLayoutGuide type="bottom" id="MoZ-ju-Xxi"/>
+                        <viewControllerLayoutGuide type="top" id="3Wx-kK-SSB"/>
+                        <viewControllerLayoutGuide type="bottom" id="M2X-P3-pTM"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oTc-w5-KLI">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="na7-Y5-Q7g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Un9-c7-cpu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="4Pb-dF-5TM" kind="embed" id="qOv-Qg-kDB"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M2X-P3-pTM" firstAttribute="top" secondItem="Un9-c7-cpu" secondAttribute="bottom" id="2iI-RK-nDE"/>
+                            <constraint firstItem="Un9-c7-cpu" firstAttribute="top" secondItem="3Wx-kK-SSB" secondAttribute="bottom" id="88t-bf-Hb1"/>
+                            <constraint firstItem="Un9-c7-cpu" firstAttribute="leading" secondItem="na7-Y5-Q7g" secondAttribute="leading" id="H5n-2A-YTt"/>
+                            <constraint firstAttribute="trailing" secondItem="Un9-c7-cpu" secondAttribute="trailing" id="y02-V7-l7i"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Ridge Social" id="gZN-Jh-1kZ">
-                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="pG3-Pb-GVY">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Ridge Social" id="1tE-Tx-a3z">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="i0e-3Q-sHo">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="showLeftMenu:" destination="mra-IQ-3mc" id="mvd-tb-Dxc"/>
+                                <action selector="presentLeftMenuViewController" destination="axa-Ic-Nb7" id="9yq-Fd-lWl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ask-ER-fuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWu-wH-jGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="993" y="2394"/>
+        </scene>
+        <!--Social Twit View Controller-->
+        <scene sceneID="RHJ-Y1-k6G">
+            <objects>
+                <tableViewController id="4Pb-dF-5TM" customClass="SocialTwitViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iSU-ng-vLu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6mk-yZ-Uoj">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6mk-yZ-Uoj" id="ZOP-P5-07Q">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4Pb-dF-5TM" id="Pjl-zn-CXZ"/>
+                            <outlet property="delegate" destination="4Pb-dF-5TM" id="VNM-fj-WSA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQx-QO-c25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1691" y="2394"/>
         </scene>
     </scenes>
     <resources>

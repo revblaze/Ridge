@@ -35,6 +35,14 @@ class LeftMenuViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.clearColor()
         view.addSubview(tableView)
+        
+        // Listen for showLeftMenu sender
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showLeftMenu", name: "showLeftMenu", object: nil)
+        
+        }
+    
+    func showLeftMenu() {
+        sideMenuViewController?.presentLeftMenuViewController()
     }
 }
 
