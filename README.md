@@ -42,6 +42,8 @@ What began as an observation — that accessing the services provided by Iroquoi
     - [ ] Teacher List *
     - [ ] Principal List *
 
+* Represents data that is deemed to be left out of the final build
+
 ## Testing Data
 There is no opportunity for testing data within the program.
 
