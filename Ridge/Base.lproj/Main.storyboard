@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hJA-ee-2fr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hJA-ee-2fr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,6 @@
                     <view key="view" contentMode="scaleToFill" id="i0l-hM-Li0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -38,17 +38,17 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y4p-vo-lTL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeedCell" rowHeight="60" id="r7Z-s1-YaJ" customClass="MyTableViewCell" customModule="Ridge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7Z-s1-YaJ" id="ZQl-IW-78m">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hello, world!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="177" translatesAutoresizingMaskIntoConstraints="NO" id="yx5-50-L05">
                                                     <rect key="frame" x="90" y="4" width="469" height="32"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="32" id="ju9-Ty-FFD"/>
                                                     </constraints>
@@ -58,22 +58,18 @@
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlO-Hg-qZm">
                                                     <rect key="frame" x="90" y="31" width="469" height="21"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Zf-Hd-UFB">
                                                     <rect key="frame" x="8" y="0.0" width="70" height="60"/>
-                                                    <animations/>
                                                 </imageView>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="yx5-50-L05" firstAttribute="trailing" secondItem="ZQl-IW-78m" secondAttribute="trailingMargin" id="9mR-HM-yEF"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <outlet property="FeedLbl" destination="yx5-50-L05" id="WuA-6F-QGj"/>
                                             <outlet property="img" destination="3Zf-Hd-UFB" id="SQ4-eb-UwZ"/>
@@ -87,7 +83,6 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Y4p-vo-lTL" secondAttribute="trailing" id="1vI-UY-fJe"/>
@@ -133,12 +128,10 @@
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wW9-9a-2RV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.67730774720094411" green="0.77047631198601352" blue="0.92361111113280414" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wW9-9a-2RV" secondAttribute="trailing" id="1Op-ka-ftD"/>
@@ -170,19 +163,19 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="yZb-hQ-1eh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="" id="3VJ-Pg-9W4">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Ryh-Lv-BFb">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ryh-Lv-BFb" id="y5A-jF-vak">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artwork" translatesAutoresizingMaskIntoConstraints="NO" id="R9q-rk-h4F">
                                                     <rect key="frame" x="8" y="8" width="84" height="83.5"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="84" id="2zb-Ee-aeA"/>
                                                         <constraint firstAttribute="height" constant="84" id="df9-9k-tEb"/>
@@ -190,14 +183,12 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ridge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-GJ-j0j">
                                                     <rect key="frame" x="100" y="8" width="492" height="25"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qad-Za-nrF">
                                                     <rect key="frame" x="100" y="35" width="492" height="50.5"/>
-                                                    <animations/>
                                                     <string key="text">Version 1.0
 Created by Justin Bush
 Copyright Iroquois Ridge © 2015</string>
@@ -206,7 +197,6 @@ Copyright Iroquois Ridge © 2015</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="Qad-Za-nrF" firstAttribute="leading" secondItem="R9q-rk-h4F" secondAttribute="trailing" constant="8" id="76f-el-KEY"/>
                                                 <constraint firstItem="R9q-rk-h4F" firstAttribute="top" secondItem="y5A-jF-vak" secondAttribute="topMargin" id="J3w-z8-oPT"/>
@@ -216,20 +206,20 @@ Copyright Iroquois Ridge © 2015</string>
                                                 <constraint firstItem="Hkf-GJ-j0j" firstAttribute="leading" secondItem="R9q-rk-h4F" secondAttribute="trailing" constant="8" id="eCO-TP-Dpi"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Credits" footerTitle="These are a list of open source projects used in the application." id="tHm-Lc-K9R">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="qd2-As-wMX">
+                                        <rect key="frame" x="0.0" y="241" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qd2-As-wMX" id="ynM-Qk-Cgm">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SSASideMenu" translatesAutoresizingMaskIntoConstraints="NO" id="eKY-ze-naJ">
                                                     <rect key="frame" x="8" y="8" width="84" height="83.5"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="84" id="E7L-CG-YCy"/>
                                                         <constraint firstAttribute="height" constant="84" id="Qxo-CB-Kzy"/>
@@ -237,14 +227,12 @@ Copyright Iroquois Ridge © 2015</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SSASideMenu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGP-b7-729">
                                                     <rect key="frame" x="100" y="8" width="492" height="25"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2K-22-yuz">
                                                     <rect key="frame" x="100" y="35" width="492" height="50.5"/>
-                                                    <animations/>
                                                     <string key="text">License: MIT
 Author: Sebastian Andersen
 Github: SSA111/SSASideMenu</string>
@@ -253,7 +241,6 @@ Github: SSA111/SSASideMenu</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="t2K-22-yuz" firstAttribute="leading" secondItem="eKY-ze-naJ" secondAttribute="trailing" constant="8" id="0eW-Rm-8fp"/>
                                                 <constraint firstItem="eKY-ze-naJ" firstAttribute="leading" secondItem="ynM-Qk-Cgm" secondAttribute="leadingMargin" id="2gz-WD-o5F"/>
@@ -263,16 +250,16 @@ Github: SSA111/SSASideMenu</string>
                                                 <constraint firstItem="t2K-22-yuz" firstAttribute="top" secondItem="WGP-b7-729" secondAttribute="bottom" constant="5" id="uDK-Yk-pIx"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Diu-qL-g7Q">
+                                        <rect key="frame" x="0.0" y="341" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Diu-qL-g7Q" id="0qk-Fh-j1a">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AFNetworking" translatesAutoresizingMaskIntoConstraints="NO" id="jCB-IW-aCX">
                                                     <rect key="frame" x="8" y="8" width="84" height="83.5"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="84" id="4Bt-xb-tSw"/>
                                                         <constraint firstAttribute="height" constant="84" id="HgZ-g9-qT9"/>
@@ -280,14 +267,12 @@ Github: SSA111/SSASideMenu</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AFNetworking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSI-Jh-r7E">
                                                     <rect key="frame" x="100" y="8" width="492" height="25"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7O-7G-byA">
                                                     <rect key="frame" x="100" y="35" width="492" height="50.5"/>
-                                                    <animations/>
                                                     <string key="text">License: MIT
 Author: Alamofire
 Github: AFNetworking/AFNetworking</string>
@@ -296,7 +281,6 @@ Github: AFNetworking/AFNetworking</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="vSI-Jh-r7E" firstAttribute="leading" secondItem="jCB-IW-aCX" secondAttribute="trailing" constant="8" id="A2l-Zu-azb"/>
                                                 <constraint firstItem="jCB-IW-aCX" firstAttribute="leading" secondItem="0qk-Fh-j1a" secondAttribute="leadingMargin" id="BTA-vf-4ZN"/>
@@ -306,16 +290,16 @@ Github: AFNetworking/AFNetworking</string>
                                                 <constraint firstItem="M7O-7G-byA" firstAttribute="bottom" secondItem="0qk-Fh-j1a" secondAttribute="bottomMargin" id="ofh-4w-o36"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="tH9-fJ-oc9">
+                                        <rect key="frame" x="0.0" y="441" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tH9-fJ-oc9" id="uwh-Gf-ln5">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MBProgressHUD" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-aD-bzw">
                                                     <rect key="frame" x="8" y="8" width="84" height="83.5"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="84" id="6Gg-Mo-XrK"/>
                                                         <constraint firstAttribute="height" constant="84" id="MkT-zt-317"/>
@@ -323,14 +307,12 @@ Github: AFNetworking/AFNetworking</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MBProgressHUD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-EI-bRW">
                                                     <rect key="frame" x="100" y="8" width="492" height="25"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-Qc-IWl">
                                                     <rect key="frame" x="100" y="35" width="492" height="50.5"/>
-                                                    <animations/>
                                                     <string key="text">License: MIT
 Author: Jonathan George
 Github: jdg/MBProgressHUD</string>
@@ -339,7 +321,6 @@ Github: jdg/MBProgressHUD</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="9hK-aD-bzw" firstAttribute="leading" secondItem="uwh-Gf-ln5" secondAttribute="leadingMargin" id="FRR-ga-CDZ"/>
                                                 <constraint firstItem="9hK-aD-bzw" firstAttribute="top" secondItem="uwh-Gf-ln5" secondAttribute="topMargin" id="TGA-C4-jhv"/>
@@ -349,16 +330,16 @@ Github: jdg/MBProgressHUD</string>
                                                 <constraint firstItem="nqS-Qc-IWl" firstAttribute="top" secondItem="hS8-EI-bRW" secondAttribute="bottom" constant="5" id="zEl-sO-kpa"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="XHm-x0-RL0">
+                                        <rect key="frame" x="0.0" y="541" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XHm-x0-RL0" id="p7Y-Rd-MJa">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MWFeedParser" translatesAutoresizingMaskIntoConstraints="NO" id="qLl-4c-tI9">
                                                     <rect key="frame" x="8" y="8" width="84" height="83.5"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="84" id="6ez-kV-eaC"/>
                                                         <constraint firstAttribute="width" constant="84" id="zRL-lV-YY2"/>
@@ -366,14 +347,12 @@ Github: jdg/MBProgressHUD</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MWFeedParser" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCu-u2-0dp">
                                                     <rect key="frame" x="100" y="8" width="492" height="25"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3o-Qv-gLY">
                                                     <rect key="frame" x="100" y="35" width="492" height="50.5"/>
-                                                    <animations/>
                                                     <string key="text">License: MIT
 Author: Michael Waterfall
 Github: mwaterfall/MWFeedParser</string>
@@ -382,7 +361,6 @@ Github: mwaterfall/MWFeedParser</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="qLl-4c-tI9" firstAttribute="leading" secondItem="p7Y-Rd-MJa" secondAttribute="leadingMargin" id="8vp-n0-7yS"/>
                                                 <constraint firstItem="e3o-Qv-gLY" firstAttribute="leading" secondItem="qLl-4c-tI9" secondAttribute="trailing" constant="8" id="GGH-dx-Rne"/>
@@ -392,16 +370,16 @@ Github: mwaterfall/MWFeedParser</string>
                                                 <constraint firstItem="qLl-4c-tI9" firstAttribute="top" secondItem="p7Y-Rd-MJa" secondAttribute="topMargin" id="w9o-1q-ike"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="dPe-wQ-CpT">
+                                        <rect key="frame" x="0.0" y="641" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dPe-wQ-CpT" id="YLU-eV-hKP">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitterKit" translatesAutoresizingMaskIntoConstraints="NO" id="EgG-mQ-6Ay">
                                                     <rect key="frame" x="8" y="8" width="84" height="83.5"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="84" id="MN4-5I-P29"/>
                                                         <constraint firstAttribute="width" constant="84" id="kzO-al-FKv"/>
@@ -409,14 +387,12 @@ Github: mwaterfall/MWFeedParser</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fabric &amp; TwitterKit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-aH-Gow">
                                                     <rect key="frame" x="100" y="8" width="492" height="25"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crh-g6-htI">
                                                     <rect key="frame" x="100" y="35" width="492" height="50.5"/>
-                                                    <animations/>
                                                     <string key="text">License: Apache (2.0)
 Author: Val Polouchkine
 Github: twitterdev/fabric-timelines-ios</string>
@@ -425,7 +401,6 @@ Github: twitterdev/fabric-timelines-ios</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="crh-g6-htI" firstAttribute="top" secondItem="pxd-aH-Gow" secondAttribute="bottom" constant="5" id="Cpa-MA-Rfz"/>
                                                 <constraint firstItem="EgG-mQ-6Ay" firstAttribute="leading" secondItem="YLU-eV-hKP" secondAttribute="leadingMargin" id="Dgv-j3-zfr"/>
@@ -435,7 +410,6 @@ Github: twitterdev/fabric-timelines-ios</string>
                                                 <constraint firstItem="crh-g6-htI" firstAttribute="bottom" secondItem="YLU-eV-hKP" secondAttribute="bottomMargin" id="bEq-Lo-wF3"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -469,7 +443,6 @@ Github: twitterdev/fabric-timelines-ios</string>
                     <view key="view" contentMode="scaleToFill" id="ySI-5R-pe2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <userDefinedRuntimeAttributes>
@@ -496,7 +469,6 @@ Github: twitterdev/fabric-timelines-ios</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="BackButtonIcon" id="eNW-qb-0hN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -516,7 +488,6 @@ Github: twitterdev/fabric-timelines-ios</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hjH-Uy-4kk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -536,7 +507,6 @@ Github: twitterdev/fabric-timelines-ios</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d5D-xM-1BW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -556,13 +526,11 @@ Github: twitterdev/fabric-timelines-ios</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t2e-gg-N6h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.72156862749999995" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kyA-xF-ASG">
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </toolbar>
                     <connections>
                         <segue destination="axa-Ic-Nb7" kind="relationship" relationship="rootViewController" id="tk5-DS-feG"/>
@@ -581,17 +549,15 @@ Github: twitterdev/fabric-timelines-ios</string>
                         <viewControllerLayoutGuide type="bottom" id="Ooq-oX-ls1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N7B-dF-WLM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-Cy-8vH">
+                            <view alpha="0.69999998807907104" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-Cy-8vH">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="144"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CvH-Rl-rKd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="9Fp-8G-HnK"/>
                                     <constraint firstAttribute="height" constant="100" id="FNU-YB-W2L"/>
@@ -603,9 +569,8 @@ Github: twitterdev/fabric-timelines-ios</string>
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAN-QK-ml1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAN-QK-ml1">
                                 <rect key="frame" x="16" y="37" width="568" height="70"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="JK9-5N-ekI"/>
                                 </constraints>
@@ -615,11 +580,9 @@ Github: twitterdev/fabric-timelines-ios</string>
                             </label>
                             <webView opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y59-Sf-m5L">
                                 <rect key="frame" x="0.0" y="144" width="600" height="392"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ldP-Cy-8vH" firstAttribute="leading" secondItem="N7B-dF-WLM" secondAttribute="leadingMargin" id="1Jx-Lt-EGt"/>
@@ -686,18 +649,16 @@ Github: twitterdev/fabric-timelines-ios</string>
                         <viewControllerLayoutGuide type="bottom" id="M2X-P3-pTM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="na7-Y5-Q7g">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Un9-c7-cpu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                                <animations/>
                                 <connections>
                                     <segue destination="4Pb-dF-5TM" kind="embed" id="qOv-Qg-kDB"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="M2X-P3-pTM" firstAttribute="top" secondItem="Un9-c7-cpu" secondAttribute="bottom" id="2iI-RK-nDE"/>
@@ -727,16 +688,15 @@ Github: twitterdev/fabric-timelines-ios</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iSU-ng-vLu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6mk-yZ-Uoj">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6mk-yZ-Uoj" id="ZOP-P5-07Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </tableViewCellContentView>
-                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
